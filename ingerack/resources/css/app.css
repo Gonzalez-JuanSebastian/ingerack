@@ -123,7 +123,7 @@ nav {
     min-height: 70vh;
     padding: 60px;
     position: relative;
-background: url("@/img/p_363ca37e-e3ff-11ef-9e67-42d9cd188e1d_wm.png") center/cover no-repeat;
+    background: url("../img/p_363ca37e-e3ff-11ef-9e67-42d9cd188e1d_wm.png") center/cover no-repeat;
 }
 
 .hero::before {
