@@ -1,0 +1,270 @@
+/* === Universal === */
+:root {
+    --ingerack1: #cadbef;
+    --ingerack2: #77a7d7;
+    --ingerack3: #1275b9;
+    --ingerack4: #006cb5;
+    --ingerack5: #30489e;
+    --primary-color: #0659b1;
+    --secondary-color: #007bff;
+    --text-color: #333;
+    --bg-light: #e3f2fd;
+    --bg-gradient-1: #e0f7fa;
+    --bg-gradient-2: #d8eaf2;
+    --bg-gradient-3: #c8e1eb;
+    --white: #ffffff;
+    --white2: #f0f8ff;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.2);
+}
+
+@font-face {
+    font-family: "HandelGo";
+    src: url("/fonts/HandelGo.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HandelGothic";
+    src: url("/fonts/HandelGothic Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* === Transiciones === */
+.wave-divider {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: var(--bg-gradient-3);
+}
+
+.section-transition1 {
+    height: 80px; /* Ajusta según necesites */
+    background: linear-gradient(
+        to bottom,
+        var(--bg-gradient-2),
+        var(--bg-gradient-1)
+    );
+}
+
+.section-transition2 {
+    height: 80px; /* Ajusta según necesites */
+    background: linear-gradient(
+        to bottom,
+        var(--bg-gradient-1),
+        var(--bg-gradient-2)
+    );
+}
+/* === SECCIÓN INICIAL === */
+#inicio {
+    background-color: #fff;
+    padding: 100px 20px 40px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#inicio h1 {
+    font-size: 3em;
+    color: #0659b1;
+}
+
+#inicio p {
+    font-size: 1.3em;
+    color: #555;
+    line-height: 1.7;
+    margin: 20px 0;
+}
+
+#hero-cont {
+    display: flex;
+    align-items: center;
+    background-color: #77a7d7a8;
+}
+
+#hero-cont p {
+    color: var(--text-color);
+}
+
+/* === SECCIÓN SOBRE NOSOTROS === */
+#sobre-nosotros {
+    background-color: var(--bg-gradient-3);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#nosotros {
+    display: flex;
+    justify-content: center;
+    padding: 50px 60px;
+    background-color: var(--bg-gradient-2);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.nosotros h2 {
+    font-size: 2.2em;
+    color: #0659b1;
+    margin-bottom: 20px;
+}
+
+.nosotros-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.nosotros-texto {
+    flex: 1;
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nosotros-img {
+    flex: 1;
+    background: url("/img/nos2.jpeg") center/cover no-repeat;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* === MÁS INFORMACIÓN === */
+#mas-informacion {
+    background-color: var(--bg-gradient-1);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#mas-informacion h3 {
+    font-size: 2em;
+    color: #0659b1;
+    margin-bottom: 20px;
+}
+
+.mis-info-cont {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 10px 50px 10px;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+}
+
+.info-card h4 {
+    font-size: 1.5em;
+    color: #0659b1;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 17px;
+    color: #333;
+}
+
+/* Nuestro Equipo */
+.equipo {
+    background: var(--bg-gradient-2);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.equipo-text {
+    font-size: 17px;
+    color: var(--text-dark);
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.equipo-card {
+    background: var(--background-light);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--card-shadow);
+    transition: transform 0.3s ease-in-out;
+}
+
+.equipo-card:hover {
+    transform: translateY(-5px);
+}
+
+.equipo-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.equipo-card p {
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+/* Imagen del equipo */
+.equipo-imagen {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.equipo-imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--card-shadow);
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .nosotros-cont {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nosotros-texto {
+        text-align: center;
+    }
+
+    .nosotros-img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .mis-info-cont {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

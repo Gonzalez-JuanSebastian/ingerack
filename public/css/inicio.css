@@ -1,0 +1,793 @@
+/* === Variables de colores === */
+:root {
+    --ingerack1: #cadbef;
+    --ingerack2: #77a7d7;
+    --ingerack3: #1275b9;
+    --ingerack4: #006cb5;
+    --ingerack5: #30489e;
+    --primary-color: #0659b1;
+    --secondary-color: #007bff;
+    --text-color: #333;
+    --bg-light: #e3f2fd;
+    --bg-gradient-1: #e0f7fa;
+    --bg-gradient-2: #d8eaf2;
+    --bg-gradient-3: #c8e1eb;
+    --white: #ffffff;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.2);
+}
+
+/* === Fonts === */
+@font-face {
+    font-family: "HandelGo";
+    src: url("/fonts/HandelGo.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HandelGothic";
+    src: url("/fonts/HandelGothic Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-family: "ubuntu";
+}
+
+
+
+
+
+
+/* === Transiciones === */
+.section-transition {
+    height: 80px; /* Ajusta según necesites */
+    background: linear-gradient(
+        to bottom,
+        #f0f8ff,
+        #ffffff
+    );
+    margin: 0;
+}
+
+.section-transition0 {
+    height: 80px; /* Ajusta según necesites */
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        var(--bg-light)
+    );
+    margin: 0;
+}
+
+.section-transition1 {
+    height: 40px; /* Ajusta según necesites */
+    background: linear-gradient(
+        to bottom,
+        var(--bg-light),
+        var(--bg-gradient-1)
+    );
+}
+
+.section-transition2 {
+    height: 40px; /* Ajusta según necesites */
+    background: linear-gradient(
+        to bottom,
+        var(--bg-light),
+        var(--bg-gradient-2)
+    );
+}
+
+.wave-divider {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: var(--bg-light);
+}
+
+.wave-divider1 {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: var(--bg-gradient-2);
+}
+
+.wave-divider2 {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: var(--bg-gradient-2);
+}
+
+
+
+
+
+/* === globales === */
+h2 {
+    font-family: "HandelGo", sans-serif;
+    font-size: 3rem;
+    color: var(--ingerack5);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #000000;
+    margin: 25px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+    margin: 100px 0;
+}
+
+
+
+
+
+/* === HERO === */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 70vh;
+  padding: 80px;
+  background: url(/img/Paginaweb1principal.png) 0 12% / cover no-repeat;
+  overflow: hidden;
+}
+
+/* Overlay azul */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 86, 179, 0.6), rgba(0, 86, 179, 0.3), transparent);
+  z-index: 1;
+}
+
+/* Contenido por encima del fondo y del overlay */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  color: white;
+  padding: 2rem;
+}
+
+.hero-content {
+    display: flex;
+    text-align: center;
+    max-width: 900px;
+    padding: 2rem;
+    border-radius: 12px;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+
+.text-hero{
+    color: #ffffff;
+}
+
+.btn-solicitar {
+  background: #ffffff;
+  color: var(--primary-color);
+  font-weight: bold;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-solicitar:hover {
+  transform: scale(1.3);
+  color: #ffffff;
+  background-color:  var(--primary-color);
+}
+
+
+
+
+
+/* === Soluciones === */
+
+.soluciones-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.soluciones-texto{
+    text-align: center;
+}
+
+.soluciones-card{
+    display: flex;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px var(--shadow-medium);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.soluciones-card img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 15px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.soluciones-card h3 {
+    font-size: 25px;
+    color: #000000;
+}
+
+.soluciones-botton{
+    background: var(--ingerack2);
+    color: #ffffff;
+    border-radius: 5px;
+    border: var(--ingerack2);
+    padding: 10px;
+    font-size: 1rem;
+    font-family: "HandelGo", sans-serif;
+}
+
+.soluciones-botton:hover{
+    transform: scale(1.2);
+    color: #ffffff;
+    background-color:  var(--primary-color);
+    transition: 0.5s;
+}
+
+
+
+/*=== Nosotros ===*/
+#nosotros{
+    background: #ffffff;
+    padding: 100px 20px;
+    margin: 0;
+}
+
+
+.content-nosotros {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+#industrial {
+    max-width: 500px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.content image,
+.content text {
+    width: 48%;
+}
+
+
+
+
+
+/* === lo que nos hace difierentes ===*/
+.Diferentes{
+    background: var(--bg-light);
+    padding: 100px 20px;
+    margin: 0;
+}
+
+.diferentes-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.diferentes-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px var(--shadow-medium);
+    flex: 1;
+}
+
+.diferentes-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.diferentes-card h3 {
+    font-family: "HandelGo", sans-serif;
+    color: var(--ingerack4);
+    font-size: 20px;
+}
+
+.diferentes-card p {
+    font-size: 17px;
+    color: #000000;
+}
+
+#soporte {
+  background: url(/img/Paginaweb-soporte.png) no-repeat center center;
+  background-size: cover;
+  border-radius: 1rem; /* opcional, si usas tarjetas con bordes redondeados */
+}
+
+
+
+
+
+/* === Sostenibilidad === */
+.sostenibilidad-section {
+    background:var(--bg-light);
+    padding: 110px 40px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.content image,
+.content text {
+    width: 48%;
+}
+
+
+/* === Clientes === */
+.clientes {
+    background: var(--bg-light);
+    padding: 110px 0;
+    margin: 0;
+}
+
+
+.clientes-intro {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.clientes-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.clientes-galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Se adapta a móviles */
+  gap: 40px; /* Espacio entre imágenes */
+}
+
+.clientes-galeria img {
+  height: 100px; /* Ajusta según tus logos */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.clientes-galeria img:hover {
+  transform: scale(1.05); /* Animación sutil al pasar el mouse */
+}
+
+
+
+
+
+    /* === SECCIÓN CONTACTO === */
+    #contacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 110px 20px;
+        margin: 0 auto;
+        background: var(--bg-gradient-1);
+    }
+
+    #contacto h2{
+        font-size: 2rem;
+    }
+    .contacto-container {
+        display: flex;
+        gap: 50px;
+        max-width: 1100px;
+        width: 100%;
+    }
+
+    .contacto-info {
+        flex: 1;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contacto-datos {
+        margin-top: 20px;
+    }
+
+    .dato {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .dato i {
+        font-size: 1.5rem;
+        color: #007bff;
+        margin-right: 10px;
+    }
+
+    /* === FORMULARIO DE CONTACTO === */
+    .contacto-form {
+        flex: 1;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-group {
+        margin-bottom: 15px;
+    }
+
+    .input-group label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .input-group input, .input-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .btn-enviar {
+        display: block;
+        width: 100%;
+        background: #007bff;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .btn-enviar:hover {
+        background: #0056b3;
+    }
+
+    .alerta-exito {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 8px;
+        text-align: center;
+        animation: fadein 0.5s ease;
+    }
+
+    @keyframes fadein {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+
+
+
+
+
+    /* === SECCIÓN MAPA === */
+    #mapa {
+        padding: 110px 20px;
+        margin: 0 auto;
+        background: var(--bg-gradient-1);
+        text-align: center;
+    }
+
+    #mapa p{
+        font-size: 1.4rem;
+    }
+
+    .mapa-container {
+        margin-top: 20px;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .mapa-container iframe {
+        width: 100%;
+        height: 350px;
+        border-radius: 10px;
+    }
+
+
+
+
+    /* SECCIÓN DE REDES SOCIALES */
+    #redes-sociales {
+        text-align: center;
+        padding: 110px 20px;
+        margin: 0 auto;
+        background: var(--bg-gradient-1);
+    }
+
+    #redes-sociales p {
+        font-size: 1.4rem;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .redes-container {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .red-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        color: white;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+    .facebook { background: #1877f2; }
+    .instagram { background: #e4405f; }
+    .linkedin { background: #0077b5; }
+    .youtube { background: #e4405f}
+    .red-social:hover {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+    }
+
+
+
+
+    /* WhatsApp */
+    .btn-whatsapp {
+        text-decoration: none;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+    }
+
+    .btn-whatsapp:hover {
+    transform: scale(1.1);
+    }
+
+
+
+
+
+/* === RESPONSIVE === */
+/* RESPONSIVE: Apila las tarjetas en móviles */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .nosotros-cont,
+    .reasons-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nosotros-texto {
+        text-align: center;
+    }
+
+    .nosotros-img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    .service-card {
+        padding: 20px;
+        margin: 0 10px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content .text,
+    .content .image {
+        width: 100%;
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .reasons-grid {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .reason-card {
+        padding: 25px;
+    }
+
+    .contacto-container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 100%;
+        margin: 0 10px;
+    }
+
+    .benefits-list li {
+        font-size: 1rem;
+    }
+
+    #industrial {
+        max-width: 300px;
+    }
+
+    .row {
+        flex-direction: column;
+        width: 80%;
+        max-width: 500px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 15px 10px;
+    }
+
+    .service-card {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .reason-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contacto-form {
+        padding: 20px;
+    }
+
+    .contacto-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-enviar {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .benefits-list li {
+        padding-left: 30px;
+    }
+
+    #hero-cont-img {
+        max-height: 250px;
+    }
+}

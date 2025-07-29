@@ -1,0 +1,600 @@
+:root {
+    --ingerack1: #cadbef;
+    --ingerack2: #77a7d7;
+    --ingerack3: #1275b9;
+    --ingerack4: #006cb5;
+    --ingerack5: #30489e;
+    --primary-color: #0659b1;
+    --secondary-color: #007bff;
+    --text-color: #333;
+    --bg-light: #e3f2fd;
+    --bg-gradient-1: #e0f7fa;
+    --bg-gradient-2: #d8eaf2;
+    --bg-gradient-3: #c8e1eb;
+    --white: #ffffff;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.2);
+}
+
+/* === Fonts === */
+@font-face {
+    font-family: "HandelGo";
+    src: url("/fonts/HandelGo.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HandelGothic";
+    src: url("/fonts/HandelGothic Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-family: "ubuntu";
+}
+
+
+
+
+
+
+/* === Transiciones === */
+.section-transition0 {
+    height: 80px; /* Ajusta según necesites */
+    background: linear-gradient(
+        to bottom,
+        var(--bg-light),
+        var(--bg-gradient-3)
+    );
+    margin: 0;
+}
+
+.section-transition1 {
+    height: 40px; /* Ajusta según necesites */
+    background: linear-gradient(
+        to bottom,
+        var(--bg-gradient-3),
+        var(--bg-gradient-2)
+    );
+}
+
+.section-transition2 {
+    height: 40px; /* Ajusta según necesites */
+    background: linear-gradient(
+        to bottom,
+        var(--bg-gradient-2),
+        var(--bg-gradient-3 )
+    );
+}
+
+.wave-divider {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: var(--bg-light);
+}
+
+.wave-divider1 {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: var(--bg-gradient-2);
+}
+
+.wave-divider2 {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: var(--bg-gradient-2);
+}
+
+
+
+
+
+/* === globales === */
+h2 {
+    font-family: "HandelGo", sans-serif;
+    font-size: 3rem;
+    color: var(--ingerack5);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #000000;
+    margin: 25px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 1  40px 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* === HERO === */
+#section{
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 70vh;
+  padding: 0;
+  margin: 0;
+  background: url(/img/Alimentomal2.jpeg    ) 0 12% / cover no-repeat;
+  overflow: hidden;
+}
+
+/* Overlay azul */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 86, 179, 0.6), rgba(0, 86, 179, 0.3), transparent);
+  z-index: 1;
+}
+
+/* Contenido por encima del fondo y del overlay */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 12px;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 200px 0 10px 0;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.text-hero{
+    color: #ffffff;
+}
+
+.btn-solicitar {
+  background: #ffffff;
+  color: var(--primary-color);
+  font-weight: bold;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-solicitar:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+  background-color:  var(--primary-color);
+}
+
+
+
+
+
+/* === quien responde === */
+.quien-responde-section {
+    background:var(--bg-light);
+    padding: 110px 40px;
+    margin: 0 auto;
+}
+
+.quien-responde-cont img{
+    height: 400px;
+}
+
+.quien-responde-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.quien-responde-cont text {
+    width: 48%;
+}
+
+
+
+
+
+/*=== fallar ===*/
+.fallar{
+    background: var(--bg-light);
+    padding: 50px 0;
+}
+
+.fallar:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.qfallar-title{
+    font-size: 2rem;
+}
+
+.fallar-list{
+    text-align: left;
+}
+.fallar-list li{
+    list-style: none;
+    font-size: 1.2rem; 
+}
+
+
+
+
+
+/* === quien responde === */
+.significar-section {
+    background:var(--bg-gradient-3);
+    padding: 110px 40px;
+    margin: 0 auto;
+}
+
+.significar-section div:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.significar-cont-1 {
+    background: var(--ingerack1);
+    margin: 25px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.text h3{
+    font-size: 2rem;
+    color:var(--ingerack5)
+}
+
+
+.significar-cont-1 img{
+    width: 200px;
+    border-radius: 15px;
+}
+
+.significar-cont-1 text {
+    font-size: 2rem;
+}
+
+/* 2 */ 
+.significar-cont-2 {
+    background: var(--ingerack2);
+    margin: 25px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-direction: row-reverse;
+}
+
+.significar-cont-2 img{
+    width: 200px;
+    border-radius: 20px;
+}
+
+
+.significar-cont-2 text {
+    font-size: 2rem;
+}
+
+
+
+
+
+
+/* === lo que nos hace difierentes ===*/
+.respaldo{
+    background: var(--bg-gradient-2);
+    padding: 100px 20px;
+    margin: 0;
+}
+
+.respaldo-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.respaldo-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px var(--shadow-medium);
+    flex: 1;
+}
+
+.respaldo-card h3 {
+    font-family: "HandelGo", sans-serif;
+    color: var(--ingerack4);
+    font-size: 20px;
+}
+
+.respaldo-card p {
+    font-size: 17px;
+    color: #000000;
+}
+
+.respaldo-grid :hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.respaldo-card :hover{
+    transform: none;
+}
+
+
+
+
+
+/*=== para ti ===*/
+.para-ti{
+    background: var(--bg-gradient-2);
+    padding: 30px 0;
+    margin: 0;
+}
+
+.para-ti:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.para-ti-title{
+    font-size: 2rem;
+}
+
+.para-ti-list{
+    text-align: left;
+}
+.para-ti-list li{
+    list-style: none;
+    font-size: 1.2rem; 
+}
+
+
+
+
+
+/*=== financiero ===*/
+.financiero{
+    background: var(--bg-gradient-2);
+    padding: 30px 0;
+    margin: 0;
+}
+
+.financiero:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+
+
+
+
+
+
+/* === SECCIÓN CONTACTO === */
+#contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 20px;
+    margin: 0 auto;
+    background: var(--bg-gradient-3);
+}
+
+#contacto h2{
+    font-size: 2rem;
+}
+.contacto-container {
+    display: flex;
+    gap: 50px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.contacto-info {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-datos {
+    margin-top: 20px;
+}
+
+.dato {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.dato i {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+/* === FORMULARIO DE CONTACTO === */
+.contacto-form {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn-enviar {
+    display: block;
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+    background: #0056b3;
+}
+
+.alerta-exito {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+    animation: fadein 0.5s ease;
+}
+
+@keyframes fadein {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+/* SECCIÓN DE REDES SOCIALES */
+#redes-sociales {
+    text-align: center;
+    padding: 110px 20px;
+    margin: 0 auto;
+    background: var(--bg-gradient-3);
+}
+
+#redes-sociales p {
+    font-size: 1.4rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.redes-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.red-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.facebook { background: #1877f2; }
+.instagram { background: #e4405f; }
+.linkedin { background: #0077b5; }
+.youtube { background: #e4405f}
+.red-social:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+
+
+
+/* WhatsApp */
+.btn-whatsapp {
+  text-decoration: none;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,312 @@
+/* === VARIABLES GLOBALES === */
+:root {
+    --primary-color: #007bff;
+    --primary-dark: #0056b3;
+    --text-dark: #333;
+    --text-light: #fff;
+    --background-main: #f4f7fc;
+    --hero-title: #0659b1;
+    --heading-color: #002855;
+    --intro-text-color: #555;
+    --card-shadow: rgba(0, 40, 85, 0.1);
+    --card-hover-shadow: rgba(0, 40, 85, 0.2);
+    --service-title: #007bff;
+    --service-text: #444;
+    --btn-bg: #007bff;
+    --btn-hover-bg: #0056b3;
+    --contact-bg: #0659b1;
+    --btn-contact-hover: #f8f9fa;
+    --bg-gradient-1: #e0f7fa;
+    --bg-gradient-2: #d8eaf2;
+    --bg-gradient-3: #c8e1eb;
+}
+
+/* === ESTILOS GENERALES === */
+p {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #000000;
+    margin: 25px;
+}
+
+/* === SECCIÓN HERO === */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    background: url("/img/p_363ca37e-e3ff-11ef-9e67-42d9cd188e1d_wm.png") center/cover no-repeat;
+    position: relative;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    text-align: center;
+}
+
+#hero-cont{
+    background-color: #77a7d7a8;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: var(--hero-title);
+}
+
+
+/* === INTRODUCCIÓN === */
+.introduccion {
+    padding: 80px 30px 50px 30px;
+    text-align: center;
+}
+
+.intro-text {
+    font-size: 1.4rem;
+    color: var(--intro-text-color);
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+/* === SECCIÓN DE SERVICIOS === */
+#servicios {
+    padding: 80px 20px;
+    background: var(--bg-gradient-3);
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.service {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 40, 85, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 40, 85, 0.2);
+}
+
+.service img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    color: var(--service-title);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.service p {
+    color: var(--service-text);
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.btn {
+    background-color: var(--btn-bg);
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: auto;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-bg);
+}
+
+/* === SECCIÓN SERVICIOS DETALLADOS === */
+.servicios {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-gradient-1);
+    align-items: center;
+}
+
+.servicio {
+    display: block;
+    background: #fff;
+    width: 80%;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.servicio img {
+    width: 80%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.contenido {
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#c2 {
+    flex-direction: row-reverse;
+}
+
+.contenido h2 {
+    font-size: 1.8rem;
+    color: var(--heading-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contenido i {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+.contenido ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.contenido ul li {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenido ul li i {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+/* === SECCIÓN CONTACTO === */
+#contacto {
+    padding: 80px 20px;
+    background: var(--bg-gradient-3);
+    text-align: center;
+    color: var(--text-dark);
+}
+
+#contacto p {
+    padding: 20px 10px;
+}
+
+.btn-contact {
+    padding: 12px 24px;
+    background: white;
+    color: var(--contact-bg);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn-contact:hover {
+    background: var(--btn-contact-hover);
+}
+
+/* === FOOTER === */
+footer {
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+}
+
+/* === TRANSICIONES === */
+.section-transition1 {
+    height: 80px;
+    background: linear-gradient(to bottom, var(--bg-gradient-3), var(--bg-gradient-1));
+}
+
+.wave-divider {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: var(--background-light);
+}
+.wave-divider2 {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: var(--bg-gradient-1);
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header .menu-toggle {
+        display: block;
+    }
+}
