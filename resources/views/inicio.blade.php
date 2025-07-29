@@ -238,7 +238,6 @@
 
 
 
-    <div class="section-transition0-2"></div>
 
 
     
@@ -247,10 +246,10 @@
             <div class="clientes-intro"> 
                 <h2>Nuestros clientes</h2>
                 <div class="clientes-galeria"> 
-                    <img src="{{ asset('img/nos1.jpeg') }}" alt="Cliente 1">
-                    <img src="{{ asset('img/nos1.jpeg') }}" alt="Cliente 2">
-                    <img src="{{ asset('img/nos1.jpeg') }}" alt="Cliente 3">
-                    <img src="{{ asset('img/nos1.jpeg') }}" alt="Cliente 4">
+                    <img src="{{ asset('img/crepes.webp') }}" alt="Cliente 1">
+                    <img src="{{ asset('img/italcol.webp') }}" alt="Cliente 2">
+                    <img src="{{ asset('img/ovopacific.webp') }}" alt="Cliente 3">
+                    <img src="{{ asset('img/roja.webp') }}" alt="Cliente 4">
                 </div>
             </div>
         </div>
