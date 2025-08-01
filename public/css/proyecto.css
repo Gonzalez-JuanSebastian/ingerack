@@ -47,9 +47,19 @@ p {
     background: linear-gradient(
         to bottom,
         var(--ingerack1),
-        var(--bg-gradient-2)
+        #ffffff
     );
     margin: 0;
+}
+
+.section-transition0-5 {
+    height: 100px; /* Ajusta según necesites */
+    background: linear-gradient(
+        to bottom,
+        #fff,
+        var(--bg-gradient-2)
+    );
+
 }
 
 .section-transition1 {
@@ -214,11 +224,6 @@ section {
     background: var(--ingerack1);
 }
 
-.quien-responde:hover{
-  transform: scale(1.1);
-  transition: 0.5s;
-}
-
 .quien-responde-title{
     font-size: 2rem;
 }
@@ -231,17 +236,36 @@ section {
     font-size: 1.2rem; 
 }
 
+.respondeList1{
+    background: #d6e3f1;
+}
 
+.respondeList2{
+    background: #bfcee0;
+}
+
+.respondeList1,
+.respondeList2{
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.respondeList1:hover,
+.respondeList2:hover{
+    color: #ff0000;
+    font-size: 1.5rem;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 
 
 /*=== financiero ===*/
 .financiero{
     background: var(--ingerack1);
-}
-
-.financiero:hover{
-  transform: scale(1.1);
-  transition: 0.5s;
 }
 
 .quien-responde-title{
@@ -254,7 +278,9 @@ section {
 
 /*=== historias ===*/
 .historias{
-    background: var(--bg-gradient-2);
+    background: #fff;
+    padding: 110px 0;
+    margin: 0;  
 }
 
 .historias-galeria {
@@ -408,7 +434,7 @@ section {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #0038a8;
+  background:#00000000;
   color: white;
   border: none;
   font-size: 1.8rem;
@@ -440,10 +466,6 @@ section {
     background: var(--bg-gradient-2);
 }
 
-.para-ti:hover{
-  transform: scale(1.1);
-  transition: 0.5s;
-}
 
 .para-ti-title{
     font-size: 2rem;

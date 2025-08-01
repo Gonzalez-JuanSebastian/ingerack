@@ -109,12 +109,12 @@
             </div>
             <div class="quien-responde-list">
               <ul>
-                <li class="">❌ Empresas que no se comprometen con el rendimiento real del sistema.</li>
-                <li class="">❌ Instalaciones sin contrato de garantía técnica.</li>
-                <li class="">❌ Diseños sin estudios reales de carga térmica o crecimiento futuro.</li>
-                <li class="">❌ Sobrecostos por equipos sobredimensionados que no necesitas.</li>
-                <li class="">❌ Facturas elevadas desde el primer mes.</li>
-                <li class="">❌ Fallas en el sistema... y nadie responde por ellas.</li>
+                <li class="respondeList1">Empresas que no se comprometen con el rendimiento re del sistema.</li>
+                <li class="respondeList2">Instalaciones sin contrato de garantía técnica.</li>
+                <li class="respondeList1">Diseños sin estudios reales de carga térmica o creciento futuro.</li>
+                <li class="respondeList2">Sobrecostos por equipos sobredimensionos que no necesitas.</li>
+                <li class="respondeList1">Facturas elevadas desde el primer mes.</li>
+                <li class="respondeList2">Fallas en el sistema... y nadie responde por ellas.</li>
               </ul>
             </div>
         </div>
@@ -150,12 +150,16 @@
             <h2>Historias reales, resultados garantizados</h2>
         </div>
         <div class="historias-galeria"> 
-          <img src="{{ asset('img/nos1.jpeg') }}" alt="Cliente 1">
-          <img src="{{ asset('img/nos1.jpeg') }}" alt="Cliente 2">
+          <img src="{{ asset('img/italcol.webp') }}" alt="Cliente 1">
+          <img src="{{ asset('img/ovopacific.webp') }}" alt="Cliente 2">
         </div>
       </div>
     </section>
 
+
+
+
+    <div class="section-transition0-  5"></div>
 
 
 
@@ -165,7 +169,7 @@
         <h2>Tu sistema con respaldo real. Diseño garantizado por contrato.</h2>
           <div class="sistema-grid">
               <div class="sistema-card">
-                  <img src="{{ asset('img/Pagina web - soporte.png') }}" alt="Sostenibilidad en refrigeración">
+                  <img src="{{ asset('img/Paginaweb-soporte.png') }}" alt="Sostenibilidad en refrigeración">
                   <h3>Diseño técnico inteligente</h3>
                   <p>Cálculo exacto de carga térmica
                   
@@ -174,7 +178,7 @@
                   Ahorro en inversión inicial y energía mensual</p>
               </div>
               <div class="sistema-card">
-                  <img src="{{ asset('img/Pagina web - experiencia.png') }}" alt="Sostenibilidad en refrigeración">
+                  <img src="{{ asset('img/Paginaweb-experiencia.png') }}" alt="Sostenibilidad en refrigeración">
                   <h3>Compromiso contractual</h3>
                   <p>Garantía de 1 año sin fallas por diseño o instalación
                     
@@ -183,7 +187,7 @@
                     Si no cumplimos, respondemos</p>
               </div>
               <div class="sistema-card">
-                  <img src="{{ asset('img/Pagina web - tecnologia.png') }}" alt="Sostenibilidad en refrigeración">
+                  <img src="{{ asset('img/Paginaweb-tecnologia.png') }}" alt="Sostenibilidad en refrigeración">
                   <h3>Proyectos escalables</h3>
                   <p>Diseño que crece contigo
                     
