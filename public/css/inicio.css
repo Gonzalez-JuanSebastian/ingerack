@@ -238,6 +238,11 @@ section {
   background-color:  var(--primary-color);
 }
 
+#logo:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
 
 
 

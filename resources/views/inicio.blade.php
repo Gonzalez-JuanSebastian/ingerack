@@ -59,7 +59,9 @@
 <body>
     <header>
       <div class="logo">
-        <img src="{{ asset('img/logo.png') }}" alt="Ingerack">
+          <a id="logo" href="{{ url('inicio') }}" >
+            <img src="{{ asset('img/logo.png') }}" alt="Ingerack">
+          </a>
 
         <div class="slogan-container">
           <div class="slogan">
@@ -147,9 +149,15 @@
     </section>
 
 
+
+
+
    <div class="section-transition"></div>
 
 
+
+
+   
     <section class="nosotros" id="nosotros">
         <div class="container">
             <div class="content" id="content-nosotros">
