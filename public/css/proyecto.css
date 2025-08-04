@@ -651,7 +651,7 @@ section {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centra el texto del título y párrafo */
+    text-align: center; 
 }
 
 /* Contenedor de datos (centrado) */
@@ -659,7 +659,7 @@ section {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente */
+    align-items: center; 
 }
 
 /* Items de datos (teléfono, email, ubicación) */
@@ -668,8 +668,8 @@ section {
     align-items: center;
     margin-bottom: 15px;
     width: 100%;
-    max-width: 300px; /* Ancho máximo para alineación consistente */
-    justify-content: flex-start; /* Alinea ícono y texto a la izquierda */
+    max-width: 300px; 
+    justify-content: flex-start; 
 }
 
 .dato i {

@@ -51,7 +51,7 @@
     </script>
 </head>
 <body>
-        <header>
+    <header>
         <div class="logo">
           <a href="{{ url('inicio') }}" >
             <img src="{{ asset('img/logo.png') }}" alt="Ingerack">
@@ -82,14 +82,17 @@
 
 
 
-        <section id="section"> 
+    <section id="section"> 
         <div class="hero" id="inicio">
             <div class="cont-info">
                 <div class="hero-cont" id="hero-cont">
                     <div class="hero-content">
                         <h1 class="text-hero"><strong>¿Tu sistema de refrigeración o climatización está protegido… o estás esperando a que falle?</strong></h1>
                         <p class="info-hero">Esperar a que algo se dañe cuesta más que repararlo. En Ingerack diseñamos mantenimientos inteligentes que aseguran tu operación, evitan pérdidas y te dan la tranquilidad de tener un equipo listo 24/7 para responder.</p>
-                        <button class="btn-solicitar">quiero proteger mi negocio</button>
+                        <a href="#contacto">
+                            <button class="btn-solicitar">Quiero proteger mi negocio</button>
+                        </a>
+                        
                     <div>
                 </div>
             </div>
@@ -129,11 +132,11 @@
             </div>
             <div class="fallar-list">
               <ul>
-                <li class="">❌         Fallos inesperados que detienen la producción y generan pérdidas.</li>
-                <li class="">❌        Emergencias atendidas con demora o con técnicos sin contexto del sistema a un precio desorbitado</li>
-                <li class="">❌        Equipos que consumen más energía cada mes sin un porque y sin que nadie lo note</li>
-                <li class="">❌      Falta de control y seguimiento técnico de tus equipos.</li>
-                <li class="">❌      No tener quién te respalde cuando más lo necesitas.</li>
+                <li class="fallaList1">Fallos inesperados que detienen la producción y generan pérdidas.</li>
+                <li class="fallaList2">Emergencias atendidas con demora o con técnicos sin contexto del sistema a un precio desorbitado</li>
+                <li class="fallaList1">Equipos que consumen más energía cada mes sin un porque y sin que nadie lo note</li>
+                <li class="fallaList2">Falta de control y seguimiento técnico de tus equipos.</li>
+                <li class="fallaList1">No tener quién te respalde cuando más lo necesitas.</li>
               </ul>
             </div>
         </div>
@@ -236,12 +239,12 @@
         </div>
             <div class="para-ti-list">
               <ul>
-                <li class="">✅ Tu empresa depende de cuartos fríos o climatización constante</li>
-                <li class=""> ✅ No puedes permitirte una emergencia por refrigeración o climatización</li>
-                <li class=""> ✅ Estás buscando reducir gastos energéticos de forma inteligente</li>
-                <li class=""> ✅ Quieres tener un aliado técnico que responda a cualquier hora, no solo un técnico cada 6 meses</li>
-                <li class="">✅ Te cuesta encontrar un proveedor confiable que responda</li>
-                <li class=""> ✅ Has perdido dinero antes por fallas técnicas o equipos mal cuidados</li>
+                <li class="tiList1">Tu empresa depende de cuartos fríos o climatización constante</li>
+                <li class="tiList2">No puedes permitirte una emergencia por refrigeración o climatización</li>
+                <li class="tiList1">Estás buscando reducir gastos energéticos de forma inteligente</li>
+                <li class="tiList2">Quieres tener un aliado técnico que responda a cualquier hora, no solo un técnico cada 6 meses</li>
+                <li class="tiList1">Te cuesta encontrar un proveedor confiable que responda</li>
+                <li class="tiList2">Has perdido dinero antes por fallas técnicas o equipos mal cuidados</li>
               </ul>
             </div>
       </div>
@@ -278,19 +281,27 @@
             <div class="contacto-info">
                 <h2>Ponte en Contacto</h2>
                 <p>Completa el formulario y uno de nuestros asesores te responderá lo antes posible.</p>
-
+            
                 <div class="contacto-datos">
                     <div class="dato">
                         <i class="fas fa-phone-alt"></i>
                         <p><strong>Teléfono:</strong> +57 123 456 7890</p>
                     </div>
+                  
                     <div class="dato">
                         <i class="fas fa-envelope"></i>
                         <p><strong>Email:</strong> contacto@ingerack.com</p>
                     </div>
+                  
                     <div class="dato">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p><strong>Ubicación:</strong> Calle 123 #45-67, Bogotá, Colombia</p>
+                        <p><strong>Ubicación:</strong> Cra. 1h #60-63, Comuna 5, Cali, Valle del Cauca</p>
+                    </div>
+                  
+                    <div class="datoWhats">
+                        <a href="https://wa.me/573001234567" target="_blank" aria-label="Chatea con nosotros por WhatsApp">
+                            <i class="fab fa-whatsapp"></i> Chatear por WhatsApp
+                        </a>
                     </div>
                 </div>
             </div>
@@ -332,6 +343,7 @@
 
         </div>
     </section>
+
 
 
 
