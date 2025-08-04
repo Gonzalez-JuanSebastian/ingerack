@@ -53,7 +53,7 @@
 <body>
     <header>
         <div class="logo">
-          <a href="{{ url('inicio') }}" >
+          <a id="logo" href="{{ url('inicio') }}" >
             <img src="{{ asset('img/logo.png') }}" alt="Ingerack">
           </a>
 
@@ -91,7 +91,10 @@
                         <h1 class="text-hero"><strong>¿Sabías que un sistema sobredimensionado puede costarte un 40% más mes a mes?</strong></h1>
                         <p class="info-hero">EMuchos proyectos de refrigeración y climatización fallan desde el diseño. Sistemas sobredimensionados, costos inflados y fallas que terminan afectando tu operación….</p>
                         <p>Y lo peor: nadie se hace responsable cuando algo sale mal</p>
-                        <button class="btn-solicitar">Solicita una revisión sin costo </button>
+                        <a href="#contacto">
+                          <button  class="btn-solicitar">Solicita una revisión sin costo </button>
+                        </a>
+
                     <div>
                 </div>
             </div>
@@ -109,12 +112,12 @@
             </div>
             <div class="quien-responde-list">
               <ul>
-                <li class="">❌ Empresas que no se comprometen con el rendimiento real del sistema.</li>
-                <li class="">❌ Instalaciones sin contrato de garantía técnica.</li>
-                <li class="">❌ Diseños sin estudios reales de carga térmica o crecimiento futuro.</li>
-                <li class="">❌ Sobrecostos por equipos sobredimensionados que no necesitas.</li>
-                <li class="">❌ Facturas elevadas desde el primer mes.</li>
-                <li class="">❌ Fallas en el sistema... y nadie responde por ellas.</li>
+                <li class="respondeList1">Empresas que no se comprometen con el rendimiento re del sistema.</li>
+                <li class="respondeList2">Instalaciones sin contrato de garantía técnica.</li>
+                <li class="respondeList1">Diseños sin estudios reales de carga térmica o creciento futuro.</li>
+                <li class="respondeList2">Sobrecostos por equipos sobredimensionos que no necesitas.</li>
+                <li class="respondeList1">Facturas elevadas desde el primer mes.</li>
+                <li class="respondeList2">Fallas en el sistema... y nadie responde por ellas.</li>
               </ul>
             </div>
         </div>
@@ -150,8 +153,8 @@
             <h2>Historias reales, resultados garantizados</h2>
         </div>
         <div class="historias-galeria"> 
-          <img src="{{ asset('img/nos1.jpeg') }}" alt="Cliente 1">
-          <img src="{{ asset('img/nos1.jpeg') }}" alt="Cliente 2">
+          <img src="{{ asset('img/italcol.webp') }}" alt="Cliente 1">
+          <img src="{{ asset('img/ovopacific.webp') }}" alt="Cliente 2">
         </div>
       </div>
     </section>
@@ -159,41 +162,61 @@
 
 
 
+    <div class="section-transition0-5"></div>
+
+
+
 
     <section class="sistema">
       <div class="container">
         <h2>Tu sistema con respaldo real. Diseño garantizado por contrato.</h2>
-          <div class="sistema-grid">
-              <div class="sistema-card">
-                  <img src="{{ asset('img/Pagina web - soporte.png') }}" alt="Sostenibilidad en refrigeración">
-                  <h3>Diseño técnico inteligente</h3>
-                  <p>Cálculo exacto de carga térmica
-                  
-                  Selección de equipos eficientes y duraderos
-                  
-                  Ahorro en inversión inicial y energía mensual</p>
+        <div class="sistema-grid">
+          <div id="sistemaDiseño" class="sistema-card special">
+            <div class="card-inner">
+              <img src="{{ asset('img/Paginaweb-soporte.png') }}" alt="Soporte técnico inteligente">
+              <div class="content">
+                <h3>Diseño técnico inteligente</h3>
+                <p>
+                  Cálculo exacto de carga térmica<br>
+                  Selección de equipos eficientes y duraderos<br>
+                  Ahorro en inversión inicial y energía mensual
+                </p>
               </div>
-              <div class="sistema-card">
-                  <img src="{{ asset('img/Pagina web - experiencia.png') }}" alt="Sostenibilidad en refrigeración">
-                  <h3>Compromiso contractual</h3>
-                  <p>Garantía de 1 año sin fallas por diseño o instalación
-                    
-                    Compromiso de consumo energético previsto por cálculo térmico
-                    
-                    Si no cumplimos, respondemos</p>
-              </div>
-              <div class="sistema-card">
-                  <img src="{{ asset('img/Pagina web - tecnologia.png') }}" alt="Sostenibilidad en refrigeración">
-                  <h3>Proyectos escalables</h3>
-                  <p>Diseño que crece contigo
-                    
-                    Preparados para expansiones futuras sin rehacer todo
-                    
-                    Reducción de retrabajos y sobrecostos</p>
-              </div>
+            </div>
           </div>
+
+          <div id="sistemaCompromiso" class="sistema-card special">
+            <div class="card-inner">
+              <img src="{{ asset('img/Paginaweb-experiencia.png') }}" alt="Compromiso contractual">
+              <div class="content">
+                <h3>Compromiso contractual</h3>
+                <p>
+                  Garantía de 1 año sin fallas por diseño o instalación<br>
+                  Compromiso de consumo energético previsto por cálculo térmico<br>
+                  Si no cumplimos, respondemos
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="sistemaProyecto" class="sistema-card special">
+            <div class="card-inner">
+              <img src="{{ asset('img/Paginaweb-tecnologia.png') }}" alt="Proyectos escalables">
+              <div class="content">
+                <h3>Proyectos escalables</h3>
+                <p>
+                  Diseño que crece contigo<br>
+                  Preparados para expansiones futuras sin rehacer todo<br>
+                  Reducción de retrabajos y sobrecostos
+                </p>
+              </div>
+            </div>
+          </div>
+        
+        </div>
       </div>
     </section>
+
 
 
 
@@ -234,6 +257,9 @@
 
       </div>
     </section>
+
+
+
 
     <script>
       const track = document.querySelector('.carousel-track');
@@ -303,11 +329,11 @@
         </div>
             <div class="para-ti-list">
               <ul>
-                <li class="">✅ Te preocupa que tu sistema no rinda como te prometen</li>
-                <li class="">✅ Te presentaron un presupuesto y no entiendes si es justo</li>
-                <li class="">✅ Quieres crecer y no quieres que tu sistema quede corto en un año</li>
-                <li class="">✅ Estás cansado de trabajar con empresas que se lavan las manos ante los errores</li>
-                <li class="">✅ Necesitas control energético, continuidad operativa y soporte técnico confiable</li>
+                <li class="tiList1">Te preocupa que tu sistema no rinda como te prometen</li>
+                <li class="tiList2">Te presentaron un presupuesto y no entiendes si es justo</li>
+                <li class="tiList1">Quieres crecer y no quieres que tu sistema quede corto en un año</li>
+                <li class="tiList2">Estás cansado de trabajar con empresas que se lavan las manos ante los errores</li>
+                <li class="tiList1">Necesitas control energético, continuidad operativa y soporte técnico confiable</li>
               </ul>
             </div>
       </div>
@@ -328,19 +354,27 @@
             <div class="contacto-info">
                 <h2>Ponte en Contacto</h2>
                 <p>Completa el formulario y uno de nuestros asesores te responderá lo antes posible.</p>
-
+            
                 <div class="contacto-datos">
                     <div class="dato">
                         <i class="fas fa-phone-alt"></i>
                         <p><strong>Teléfono:</strong> +57 123 456 7890</p>
                     </div>
+                  
                     <div class="dato">
                         <i class="fas fa-envelope"></i>
                         <p><strong>Email:</strong> contacto@ingerack.com</p>
                     </div>
+                  
                     <div class="dato">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p><strong>Ubicación:</strong> Calle 123 #45-67, Bogotá, Colombia</p>
+                        <p><strong>Ubicación:</strong> Cra. 1h #60-63, Comuna 5, Cali, Valle del Cauca</p>
+                    </div>
+                  
+                    <div class="datoWhats">
+                        <a href="https://wa.me/573001234567" target="_blank" aria-label="Chatea con nosotros por WhatsApp">
+                            <i class="fab fa-whatsapp"></i> Chatear por WhatsApp
+                        </a>
                     </div>
                 </div>
             </div>

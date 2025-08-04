@@ -59,7 +59,9 @@
 <body>
     <header>
       <div class="logo">
-        <img src="{{ asset('img/logo.png') }}" alt="Ingerack">
+          <a id="logo" href="{{ url('inicio') }}" >
+            <img src="{{ asset('img/logo.png') }}" alt="Ingerack">
+          </a>
 
         <div class="slogan-container">
           <div class="slogan">
@@ -147,9 +149,15 @@
     </section>
 
 
+
+
+
    <div class="section-transition"></div>
 
 
+
+
+   
     <section class="nosotros" id="nosotros">
         <div class="container">
             <div class="content" id="content-nosotros">
@@ -187,18 +195,13 @@
 
             <div class="diferentes-grid">
                 <div id="soporte" class="diferentes-card">
-                    <p>soporte especializado y respuesta 24/7</p>
-                    <p>brindamos atención personalizada a cada etapa de tu proyecto o necesidad con un soporte 24/7</p>
+                    <h3>Soporte especializado y respuesta 24/7</h3>
                 </div>
-                <div class="diferentes-card">
-                    <img src="{{ asset('img/Pagina web - experiencia.png') }}" alt="Sostenibilidad en refrigeración">
-                    <p>+ 20 años de experiencia</p>
-                    <p>Más de 22 años de experiencia respaldan nuestro compromiso. Somos aliados técnicos, no solo proveedores, acompañando cada proyecto desde el diseño hasta su óptimo funcionamiento.</p>
+                <div id="experiencia" class="diferentes-card">
+                    <h3>+ 20 años de experiencia</h3>
                 </div>
-                <div class="diferentes-card">
-                    <img src="{{ asset('img/Pagina web - tecnologia.png') }}" alt="Sostenibilidad en refrigeración">
-                    <p>tecnología de ultima generación</p>
-                    <p>Utilizamos los sistemas mas avanzados para tener el mejor monitores, automatización, rendimiento y eficiencia energética.</p>
+                <div id="tecnologia" class="diferentes-card">
+                    <h3>Tecnología de ultima generación</h3>
                 </div>
             </div>
         </div>
@@ -206,48 +209,55 @@
 
 
 
+    <div class="section-transition0-1"></div>
 
 
-        <section class="sostenibilidad-section">
-            <div class="container">
-                <div class="content" class="sostenibilidad-cont">
-                    <div class="image">
-                        <img src="{{ asset('img/nos1.jpeg') }}" alt="Sostenibilidad en refrigeración">
-                    </div>
-                    <div class="text">
-                        <h2>Compromiso con la Sostenibilidad</h2>
-                        <p>
-                            En <strong>Ingerack</strong> , apostamos por un <strong>futuro más verde</strong>. Nuestros
-                            sistemas de refrigeración están diseñados para minimizar el impacto ambiental.
-                        </p>
-                        <ul class="benefits-list">
-                            <li>🌱 <strong>Refrigerantes ecológicos:</strong> Uso de sustancias amigables con el medio
-                                ambiente.</li>
-                            <li>⚡ <strong>Eficiencia energética:</strong> Disminución del consumo eléctrico hasta un 25%.
-                            </li>
-                            <li>🔄 <strong>Materiales sostenibles:</strong> Equipos construidos con certificaciones
-                                internacionales.
-                            </li>
-                        </ul>
-                        <p>
-                            Al elegirnos, no solo obtienes tecnología de punta, sino también una solución responsable con el
-                            planeta.
-                        </p>
-                    </div>
+
+    <section class="sostenibilidad-section">
+        <div class="container">
+            <div class="content" class="sostenibilidad-cont">
+                <div class="image">
+                    <img src="{{ asset('img/nos1.jpeg') }}" alt="Sostenibilidad en refrigeración">
+                </div>
+                <div class="text">
+                    <h2>Compromiso con la Sostenibilidad</h2>
+                    <p>
+                        En <strong>Ingerack</strong> , apostamos por un <strong>futuro más verde</strong>. Nuestros
+                        sistemas de refrigeración están diseñados para minimizar el impacto ambiental.
+                    </p>
+                    <ul class="benefits-list">
+                        <li>🌱 <strong>Refrigerantes ecológicos:</strong> Uso de sustancias amigables con el medio
+                            ambiente.</li>
+                        <li>⚡ <strong>Eficiencia energética:</strong> Disminución del consumo eléctrico hasta un 25%.
+                        </li>
+                        <li>🔄 <strong>Materiales sostenibles:</strong> Equipos construidos con certificaciones
+                            internacionales.
+                        </li>
+                    </ul>
+                    <p>
+                        Al elegirnos, no solo obtienes tecnología de punta, sino también una solución responsable con el
+                        planeta.
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     
+
+
+
+
+
     
     <section class="clientes">
         <div class="container">
             <div class="clientes-intro"> 
                 <h2>Nuestros clientes</h2>
                 <div class="clientes-galeria"> 
-                    <img src="{{ asset('img/nos1.jpeg') }}" alt="Cliente 1">
-                    <img src="{{ asset('img/nos1.jpeg') }}" alt="Cliente 2">
-                    <img src="{{ asset('img/nos1.jpeg') }}" alt="Cliente 3">
-                    <img src="{{ asset('img/nos1.jpeg') }}" alt="Cliente 4">
+                    <img src="{{ asset('img/crepes.webp') }}" alt="Cliente 1">
+                    <img src="{{ asset('img/italcol.webp') }}" alt="Cliente 2">
+                    <img src="{{ asset('img/ovopacific.webp') }}" alt="Cliente 3">
+                    <img src="{{ asset('img/roja.webp') }}" alt="Cliente 4">
                 </div>
             </div>
         </div>

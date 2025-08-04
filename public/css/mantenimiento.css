@@ -218,6 +218,7 @@ section {
 
 .quien-responde-cont img{
     height: 400px;
+    border-radius: 25px;
 }
 
 .quien-responde-cont {
@@ -254,11 +255,37 @@ section {
 .fallar-list{
     text-align: left;
 }
+
 .fallar-list li{
     list-style: none;
-    font-size: 1.2rem; 
+    font-size: 1    rem; 
 }
 
+.fallaList1{
+    background: #d6e3f1;
+}
+
+.fallaList2{
+    background: #bfcee0;
+}
+
+.fallaList1,
+.fallaList2{
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.fallaList1:hover,
+.fallaList2:hover{
+    color: #ff0000;
+    font-size: 1.2rem;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 
 
 
@@ -393,13 +420,38 @@ section {
 
 .para-ti-list{
     text-align: left;
+    text-align: center;
 }
 .para-ti-list li{
     list-style: none;
     font-size: 1.2rem; 
 }
 
+.tiList1{
+  background:#e0f0f7;
+}
 
+.tiList2{
+  background:#c5d6dd ;
+}
+
+.tiList1,
+.tiList2{
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.tiList1:hover,
+.tiList2:hover{
+    color: #008000;
+    font-size: 1.2rem;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 
 
 
@@ -447,10 +499,14 @@ section {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
 }
 
 .contacto-datos {
-    margin-top: 20px;
+    margin-top: 20px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 .dato {
@@ -463,6 +519,37 @@ section {
     font-size: 1.5rem;
     color: #007bff;
     margin-right: 10px;
+}
+
+
+/* Botón de WhatsApp */
+.datoWhats {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.datoWhats a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #25D366; /* Verde de WhatsApp */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.datoWhats a:hover {
+    background: #128C7E; /* Verde oscuro al hover */
+}
+
+.datoWhats i {
+    font-size: 1.5rem;
+    color: white;
 }
 
 /* === FORMULARIO DE CONTACTO === */

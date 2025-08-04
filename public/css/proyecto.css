@@ -47,9 +47,19 @@ p {
     background: linear-gradient(
         to bottom,
         var(--ingerack1),
-        var(--bg-gradient-2)
+        #ffffff
     );
     margin: 0;
+}
+
+.section-transition0-5 {
+    height: 100px; /* Ajusta según necesites */
+    background: linear-gradient(
+        to bottom,
+        #fff,
+        var(--bg-gradient-2)
+    );
+
 }
 
 .section-transition1 {
@@ -91,7 +101,10 @@ p {
     background: var(--bg-gradient-2);
 }
 
-
+#logo:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
 
 
 
@@ -214,11 +227,6 @@ section {
     background: var(--ingerack1);
 }
 
-.quien-responde:hover{
-  transform: scale(1.1);
-  transition: 0.5s;
-}
-
 .quien-responde-title{
     font-size: 2rem;
 }
@@ -231,17 +239,36 @@ section {
     font-size: 1.2rem; 
 }
 
+.respondeList1{
+    background: #d6e3f1;
+}
 
+.respondeList2{
+    background: #bfcee0;
+}
+
+.respondeList1,
+.respondeList2{
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.respondeList1:hover,
+.respondeList2:hover{
+    color: #ff0000;
+    font-size: 1.5rem;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 
 
 /*=== financiero ===*/
 .financiero{
     background: var(--ingerack1);
-}
-
-.financiero:hover{
-  transform: scale(1.1);
-  transition: 0.5s;
 }
 
 .quien-responde-title{
@@ -254,7 +281,9 @@ section {
 
 /*=== historias ===*/
 .historias{
-    background: var(--bg-gradient-2);
+    background: #fff;
+    padding: 110px 0;
+    margin: 0;  
 }
 
 .historias-galeria {
@@ -280,59 +309,172 @@ section {
 
 
 
-/* === lo que nos hace difierentes ===*/
-.sistema{
-    background: var(--bg-gradient-2);
-}
-
-.sistema{
-    padding: 100px 20px;
-    margin: 0;
+/* === lo que nos hace diferentes === */
+.sistema {
+  background: var(--bg-gradient-2);
+  padding: 100px 20px;
+  margin: 0;
 }
 
 .sistema-grid {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+  flex-wrap: nowrap;
 }
 
 .sistema-card {
-    background: var(--white);
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 5px 15px var(--shadow-medium);
-    flex: 1;
+  position: relative; /* necesario para overlays */
+  background: var(--white);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px var(--shadow-medium);
+  flex: 1 1 300px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sistema-card .card-inner {
+  position: relative;
+  z-index: 1;
 }
 
 .sistema-card img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
 }
 
 .sistema-card h3 {
-    font-family: "HandelGo", sans-serif;
-    color: var(--ingerack4);
-    font-size: 20px;
+  font-family: "HandelGo", sans-serif;
+  color: var(--ingerack4);
+  font-size: 20px;
+  margin: 10px 0 5px;
 }
 
 .sistema-card p {
-    font-size: 17px;
-    color: #000000;
+  font-size: 17px;
+  color: #000;
+  line-height: 1.4;
+  margin: 0;
 }
 
-.sistema-grid :hover{
-    transform: scale(1.1);
-    transition: 0.5s;
+/* Hover grupal: toda la tarjeta se escala y eleva */
+.sistema-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-.sistema-card :hover{
-    transform: none;
+/* Especial para la tarjeta con fondo dinámico y degradado solo en hover */
+#sistemaDiseño.special,
+#sistemaCompromiso.special,
+#sistemaProyecto.special {
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
+
+#sistemaDiseño.special::before,
+#sistemaCompromiso.special::before,
+#sistemaProyecto.special::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: none; /* sin degradado por defecto */
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 1rem;
+  transition: background 0.3s ease;
+}
+
+/* Al hacer hover se aplica fondo e overlay degradado */
+#sistemaDiseño.special:hover {
+  background: url(/img/Paginaweb-soporte.png) no-repeat center center;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+#sistemaCompromiso.special:hover{
+  background: url(/img/Paginaweb-experiencia.png) no-repeat center center ;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+#sistemaProyecto.special:hover{
+  background: url(/img/Paginaweb-tecnologia.png) no-repeat center center ;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+
+#sistemaDiseño.special:hover::before,
+#sistemaCompromiso.special:hover::before,
+#sistemaProyecto.special:hover::before {
+  background: linear-gradient(to top, rgba(0, 86, 179, 0.6), rgba(0, 86, 179, 0.3), transparent);
+}
+
+/* Ocultar imagen interna al hacer hover para que se note el fondo */
+#sistemaDiseño.special:hover img,
+#sistemaCompromiso.special:hover img,
+#sistemaProyecto.special:hover img
+ {
+  opacity: 0;
+}
+
+/* Texto sobre el fondo sigue legible */
+#sistemaDiseño.special:hover p,
+#sistemaCompromiso.special:hover p,
+#sistemaProyecto.special:hover p {
+    position: relative;
+    z-index: 1;
+    font-family: "HandelGo";
+    color: #ffffff;
+    -webkit-text-stroke: 1px var(--ingerack4, #006cb5); /* Borde azul en el texto (Safari/Chrome) */
+    text-stroke: .5px var(--ingerack4, #006cb5); /* Futuro estándar */
+    paint-order: stroke fill; /* Asegura que el borde se dibuje detrás del relleno */
+    /* Fallback para navegadores que no soportan text-stroke */
+    text-shadow: 
+        -0.5px -0.5px 0 var(--ingerack4, #006cb5),
+        0.5px -0.5px 0 var(--ingerack4, #006cb5),
+        -0.5px 0.5px 0 var(--ingerack4, #006cb5),
+        0.5px 0.5px 0 var(--ingerack4, #006cb5);
+}
+
+
+#sistemaDiseño.special:hover h3,
+#sistemaCompromiso.special:hover h3,
+#sistemaProyecto.special:hover h3 {
+    position: relative;
+    z-index: 1;
+    font-family: "HandelGo";
+    color:var(--ingerack4);
+    font-size: 2rem;
+    /* Borde blanco MUY DELGADO (0.25px para máxima sutileza) */
+    -webkit-text-stroke: 0.01px #ffffff;
+    text-stroke: 0.01px #ffffff;
+    
+    /* Fallback con text-shadow (más preciso que text-stroke en algunos navegadores) */
+    text-shadow:
+        -0.01px -0.01px 0 #ffffff,
+        0.01px -0.01px 0 #ffffff,
+        -0.01px 0.01px 0 #ffffff,
+        0.01px 0.01px 0 #ffffff;
+    
+    /* Eliminamos el fondo azul y padding innecesario */
+}
+
+
+/* Ajustes responsivos */
+@media (max-width: 1024px) {
+  .sistema-grid {
+    flex-direction: column;
+  }
+}
+
 
 
 
@@ -408,7 +550,7 @@ section {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #0038a8;
+  background:#00000000;
   color: white;
   border: none;
   font-size: 1.8rem;
@@ -440,10 +582,6 @@ section {
     background: var(--bg-gradient-2);
 }
 
-.para-ti:hover{
-  transform: scale(1.1);
-  transition: 0.5s;
-}
 
 .para-ti-title{
     font-size: 2rem;
@@ -457,9 +595,31 @@ section {
     font-size: 1.2rem; 
 }
 
+.tiList1{
+  background:#e0f0f7;
+}
 
+.tiList2{
+  background:#c5d6dd ;
+}
 
+.tiList1,
+.tiList2{
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
 
+}
+
+.tiList1:hover,
+.tiList2:hover{
+    color: #008000;
+    font-size: 1.5rem;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 
 
 
@@ -476,6 +636,7 @@ section {
 #contacto h2{
     font-size: 2rem;
 }
+/* Contenedor principal */
 .contacto-container {
     display: flex;
     gap: 50px;
@@ -483,28 +644,68 @@ section {
     width: 100%;
 }
 
+/* Tarjeta de información */
 .contacto-info {
     flex: 1;
     background: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
 }
 
+/* Contenedor de datos (centrado) */
 .contacto-datos {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
+/* Items de datos (teléfono, email, ubicación) */
 .dato {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px; 
+    justify-content: flex-start; 
 }
 
 .dato i {
     font-size: 1.5rem;
     color: #007bff;
     margin-right: 10px;
+}
+
+/* Botón de WhatsApp */
+.datoWhats {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.datoWhats a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #25D366; /* Verde de WhatsApp */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.datoWhats a:hover {
+    background: #128C7E; /* Verde oscuro al hover */
+}
+
+.datoWhats i {
+    font-size: 1.5rem;
+    color: white;
 }
 
 /* === FORMULARIO DE CONTACTO === */
