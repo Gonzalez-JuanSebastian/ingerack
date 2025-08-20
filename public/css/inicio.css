@@ -302,39 +302,6 @@ section {
 
 
 
-/*=== Nosotros ===*/
-#nosotros{
-    background: #ffffff;
-    padding: 100px 20px;
-    margin: 0;
-}
-
-
-.content-nosotros {
-    display: inline-flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-}
-
-#industrial {
-    max-width: 500px;
-}
-
-.content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-}
-
-.content image,
-.content text {
-    width: 48%;
-}
-
-
-
 
 
 /* === lo que nos hace difierentes ===*/
@@ -342,6 +309,18 @@ section {
     background: var(--bg-light);
     padding: 100px 20px;
     margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333;
 }
 
 .diferentes-grid {
@@ -352,7 +331,7 @@ section {
 }
 
 .diferentes-card {
-    position: relative; /* Necesario para que ::before funcione */
+    position: relative;
     padding: 30px;
     box-shadow: 0 5px 15px var(--shadow-medium);
     flex: 1;
@@ -362,8 +341,9 @@ section {
     justify-content: flex-end; 
     align-items: center;       
     text-align: center;  
-    overflow: hidden; /* Previene que ::before se salga del card */
-    border-radius: 1rem; /* Para que el ::before respete el borde */
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: all 0.5s ease;
 }
 
 
@@ -372,11 +352,18 @@ section {
     position: absolute;
     inset: 0;
     background: linear-gradient(to top, rgba(0, 86, 179, 0.6), rgba(0, 86, 179, 0.3), transparent);
-    z-index: 0; /* Por debajo del contenido */
-    pointer-events: none; /* El degradado no bloquea interacciones */
-    border-radius: 1rem; /* Coincide con el card */
+    z-index: 0; 
+    pointer-events: none; 
+    border-radius: 1rem; 
+    transition: all 0.5s ease;
 }
 
+.card-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
 
 .diferentes-card img {
     width: 100px;
@@ -395,8 +382,20 @@ section {
 
 }
 
+.hover-text {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.6;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    padding: 0 10px;
+    transform: translateY(20px);
+}
+
 .diferentes-card p {
-    font-size: 17px;
+    font-size: 15px;
     color: #000000;
 }
 
@@ -407,7 +406,7 @@ section {
 }
 
 #experiencia{
-    background: url(/img/Paginaweb-experiencia.png) no-repeat center center;
+    background: url(/img/PGW-PRINCIPAL-Manoscontrato2.png) no-repeat center center;
     background-size: cover;
     border-radius: 1rem; 
 }
@@ -416,6 +415,32 @@ section {
     background: url(/img/Paginaweb-tecnologia.png) no-repeat center center;
     background-size: cover;
     border-radius: 1rem; 
+}
+
+.diferentes-card:hover {
+    transform: scale(1.05);
+    z-index: 3;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.diferentes-card:hover::before {
+    background: linear-gradient(to top, rgba(0, 86, 179, 0.9), rgba(0, 86, 179, 0.7), transparent);
+}
+
+.diferentes-card:hover .hover-text {
+    opacity: 1;
+    max-height: 200px;
+    transform: translateY(0);
+    margin-top: 15px;
+}
+
+.diferentes-card:hover h3 {
+    transform: translateY(-10px);
+}
+
+.diferentes-grid:has(.diferentes-card:hover) .diferentes-card:not(:hover) {
+    transform: scale(0.95);
+    filter: brightness(0.8);
 }
 
 #soporte:hover,
@@ -479,7 +504,6 @@ section {
 }
 
 .clientes-intro h2 {
-  font-size: 2rem;
   margin-bottom: 40px;
 }
 
@@ -503,6 +527,43 @@ section {
 
 .clientes-galeria img:hover {
   transform: scale(1.05); /* Animación sutil al pasar el mouse */
+}
+
+
+
+
+/*=== Nosotros ===*/
+#nosotros{
+    background: #ffffff;
+    padding: 100px 20px;
+    margin: 0;
+}
+
+
+.content-nosotros {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+#industrial {
+    max-width: 500px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.content image,
+.content text {
+    width: 48%;
+}
+.content h2{
+    font-size: 2rem;
 }
 
 

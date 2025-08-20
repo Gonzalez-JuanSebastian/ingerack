@@ -42,28 +42,48 @@ p {
 
 
 /* === Transiciones === */
-.section-transition0 {
-    height: 100px; /* Ajusta según necesites */
+.section-transition {
+    height: 30px; 
+    background: linear-gradient(
+        to bottom,
+        #598cc2,
+        var(--ingerack1)
+    );
+    margin: 0;
+}
+
+.section-transition00 {
+    height: 30px; 
     background: linear-gradient(
         to bottom,
         var(--ingerack1),
-        #ffffff
+        #c2c9cf
+    );
+    margin: 0;
+}
+
+.section-transition0 {
+    height: 100px; 
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        var(--bg-gradient-2)
     );
     margin: 0;
 }
 
 .section-transition0-5 {
-    height: 100px; /* Ajusta según necesites */
+    height: 100px; 
     background: linear-gradient(
         to bottom,
-        #fff,
-        var(--bg-gradient-2)
+        var(--bg-gradient-2),
+        #fff
     );
 
 }
 
 .section-transition1 {
-    height: 40px; /* Ajusta según necesites */
+    height: 40px; 
     background: linear-gradient(
         to bottom,
         var(--bg-gradient-2),
@@ -72,7 +92,7 @@ p {
 }
 
 .section-transition2 {
-    height: 40px; /* Ajusta según necesites */
+    height: 40px; 
     background: linear-gradient(
         to bottom,
         var(--bg-light),
@@ -218,63 +238,221 @@ section {
   background-color:  var(--primary-color);
 }
 
+/* === hero 2 ===*/
+.hero2{
+    background: url(/img/Paginaweb1principal.png) 0 12% / cover no-repeat;
+}
+
+.hero2 p{
+    font-size: 20px ;
+}
 
 
 
 
-/*=== quien resonde ===*/
-.quien-responde{
+
+/*=== quien responde ===*/
+.quien-responde {
     background: var(--ingerack1);
+    position: relative;
+    overflow: hidden;
 }
 
-.quien-responde-title{
-    font-size: 2rem;
+.quien-responde::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    z-index: 1;
 }
 
-.quien-responde-list{
-    text-align: left;
+.quien-responde-title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
 }
-.quien-responde-list li{
+
+.quien-responde-title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.quien-responde-title h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--red-alert);
+    border-radius: 2px;
+}
+
+.quien-responde-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quien-responde-list ul {
     list-style: none;
-    font-size: 1.2rem; 
 }
 
-.respondeList1{
+.item{
+    color: #ff0000;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.responde-item {
+    position: relative;
+    padding: 20px 25px;
+    margin: 15px 0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.responde-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--blue-medium);
+    transition: width 0.4s ease;
+}
+
+.respondeList1 {
     background: #d6e3f1;
 }
 
-.respondeList2{
+.respondeList2 {
     background: #bfcee0;
 }
 
-.respondeList1,
-.respondeList2{
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 10px;
+.responde-item .item-header {
     display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--blue-dark);
+    position: relative;
+    z-index: 2;
+}
+
+.responde-item .item-header::before {
+    content: "!";
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-
+    width: 28px;
+    height: 28px;
+    background: var(--blue-dark);
+    color: white;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-weight: bold;
 }
 
-.respondeList1:hover,
-.respondeList2:hover{
-    color: #ff0000;
-    font-size: 1.5rem;
+.responde-item .hover-paragraph {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 40px;
+    font-size: 1.05rem;
+    color: #334155;
+    line-height: 1.7;
+    transition: all 0.5s ease;
+}
+
+/* Efecto hover */
+.responde-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.responde-item:hover::before {
+    width: 100%;
+    opacity: 0.1;
+}
+
+.responde-item:hover .hover-paragraph {
+    max-height: 300px;
+    opacity: 1;
+    padding: 20px 40px 10px;
+}
+
+.respondeList1:hover {
+    background: #e0ebff;
+}
+
+.respondeList2:hover {
+    background: #c8d9f0;
+}
+
+.responde-item:hover .item-header {
+    color: #0f172a;
+}
+
+/* Animación de icono */
+.responde-item:hover .item-header::before {
+    background: var(--red-alert);
     transform: scale(1.1);
-    transition: 0.5s;
+    transition: all 0.3s ease;
 }
 
-
-/*=== financiero ===*/
-.financiero{
-    background: var(--ingerack1);
+/* Responsive */
+@media (max-width: 768px) {
+    .quien-responde-title h2 {
+        font-size: 2rem;
+    }
+    
+    .responde-item .item-header {
+        font-size: 1.1rem;
+    }
+    
+    .responde-item .hover-paragraph {
+        padding: 0 20px;
+        font-size: 1rem;
+    }
+    
+    .responde-item:hover .hover-paragraph {
+        padding: 15px 20px 10px;
+    }
 }
 
-.quien-responde-title{
-    font-size: 1.5rem;
+@media (max-width: 480px) {
+    .quien-responde-title h2 {
+        font-size: 1.7rem;
+    }
+    
+    .responde-item {
+        padding: 15px 20px;
+    }
+    
+    .responde-item .item-header {
+        font-size: 1rem;
+    }
+    
+    .responde-item .item-header::before {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
 }
-
 
 
 
@@ -309,6 +487,7 @@ section {
 
 
 
+
 /* === lo que nos hace diferentes === */
 .sistema {
   background: var(--bg-gradient-2);
@@ -325,7 +504,7 @@ section {
 }
 
 .sistema-card {
-  position: relative; /* necesario para overlays */
+  position: relative; 
   background: var(--white);
   padding: 30px;
   border-radius: 15px;
@@ -384,7 +563,7 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  background: none; /* sin degradado por defecto */
+  background: none;
   z-index: 0;
   pointer-events: none;
   border-radius: 1rem;
@@ -393,19 +572,19 @@ section {
 
 /* Al hacer hover se aplica fondo e overlay degradado */
 #sistemaDiseño.special:hover {
-  background: url(/img/Paginaweb-soporte.png) no-repeat center center;
+  background: url(/img/PGW-2DISEÑO-diseñotecnicointeli.png) no-repeat center center;
   background-size: cover;
   border-radius: 1rem;
 }
 
 #sistemaCompromiso.special:hover{
-  background: url(/img/Paginaweb-experiencia.png) no-repeat center center ;
+  background: url(/img/PGW-PRINCIPAL-Manoscontrato2.png) no-repeat center center ;
   background-size: cover;
   border-radius: 1rem;
 }
 
 #sistemaProyecto.special:hover{
-  background: url(/img/Paginaweb-tecnologia.png) no-repeat center center ;
+  background: url(/img/PGW-PRINCIPALmantenimientoIng.png) no-repeat center center ;
   background-size: cover;
   border-radius: 1rem;
 }
@@ -433,10 +612,8 @@ section {
     z-index: 1;
     font-family: "HandelGo";
     color: #ffffff;
-    -webkit-text-stroke: 1px var(--ingerack4, #006cb5); /* Borde azul en el texto (Safari/Chrome) */
-    text-stroke: .5px var(--ingerack4, #006cb5); /* Futuro estándar */
-    paint-order: stroke fill; /* Asegura que el borde se dibuje detrás del relleno */
-    /* Fallback para navegadores que no soportan text-stroke */
+    -webkit-text-stroke: 1px var(--ingerack4, #006cb5); 
+    text-stroke: .5px var(--ingerack4, #006cb5); 
     text-shadow: 
         -0.5px -0.5px 0 var(--ingerack4, #006cb5),
         0.5px -0.5px 0 var(--ingerack4, #006cb5),
@@ -453,7 +630,6 @@ section {
     font-family: "HandelGo";
     color:var(--ingerack4);
     font-size: 2rem;
-    /* Borde blanco MUY DELGADO (0.25px para máxima sutileza) */
     -webkit-text-stroke: 0.01px #ffffff;
     text-stroke: 0.01px #ffffff;
     
@@ -463,8 +639,6 @@ section {
         0.01px -0.01px 0 #ffffff,
         -0.01px 0.01px 0 #ffffff,
         0.01px 0.01px 0 #ffffff;
-    
-    /* Eliminamos el fondo azul y padding innecesario */
 }
 
 
@@ -474,6 +648,10 @@ section {
     flex-direction: column;
   }
 }
+
+
+
+
 
 
 
@@ -690,7 +868,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background: #25D366; /* Verde de WhatsApp */
+    background: #25D366;
     color: white;
     padding: 12px 20px;
     border-radius: 5px;
@@ -700,9 +878,9 @@ section {
 }
 
 .datoWhats a:hover {
-    background: #128C7E; /* Verde oscuro al hover */
+    background: #128C7E; 
 }
-
+0
 .datoWhats i {
     font-size: 1.5rem;
     color: white;
