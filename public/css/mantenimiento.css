@@ -125,8 +125,6 @@ section {
 
 
 
-
-
 /* === HERO === */
 #section{
     padding: 0;
@@ -210,96 +208,16 @@ section {
 
 
 /* === quien responde === */
-.quien-responde-section {
-    background:var(--bg-light);
-    padding: 110px 40px;
-    margin: 0 auto;
-}
-
-.quien-responde-cont img{
-    height: 400px;
-    border-radius: 25px;
-}
-
-.quien-responde-cont {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-}
-
-
-.quien-responde-cont text {
-    width: 48%;
-}
-
-
-
-
-
-/*=== fallar ===*/
-.fallar{
-    background: var(--bg-light);
-    padding: 50px 0;
-}
-
-.fallar:hover{
-  transform: scale(1.1);
-  transition: 0.5s;
-}
-
-.qfallar-title{
-    font-size: 2rem;
-}
-
-.fallar-list{
-    text-align: left;
-}
-
-.fallar-list li{
-    list-style: none;
-    font-size: 1    rem; 
-}
-
-.fallaList1{
-    background: #d6e3f1;
-}
-
-.fallaList2{
-    background: #bfcee0;
-}
-
-.fallaList1,
-.fallaList2{
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.fallaList1:hover,
-.fallaList2:hover{
-    color: #ff0000;
-    font-size: 1.2rem;
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-
-
-
-/* === quien responde === */
 .significar-section {
     background:var(--bg-gradient-3);
     padding: 110px 40px;
     margin: 0 auto;
 }
 
-.significar-section div:hover {
-  transform: scale(1.05);
-  transition: 0.5s;
+.significar-section h2  {
+    font-size: 2.5rem;
+    padding: 10px;
+    margin: 5px;
 }
 
 .significar-cont-1 {
@@ -350,6 +268,104 @@ section {
     font-size: 2rem;
 }
 
+.significar-cont-1:hover,
+.significar-cont-2:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+
+
+
+/*=== fallar ===*/
+.fallar{
+    background: var(--bg-gradient-3);
+    padding: 50px 0;
+}
+
+.qfallar-title{
+    font-size: 2rem;
+}
+
+.fallar-list{
+    text-align: left;
+}
+
+.fallar-list li{
+    list-style: none;
+    font-size: 1    rem; 
+}
+
+.fallaList1{
+    background: #d6e3f1;
+}
+
+.fallaList2{
+    background: #bfcee0;
+}
+
+.fallaList1,
+.fallaList2{
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.fallaList1:hover,
+.fallaList2:hover{
+    color: #ff0000;
+    font-size: 1.2rem;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+
+
+
+/* === HERO2 === */
+.hero2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 0;
+  margin: 0;
+  background: url(/img/PGW-3MANTENIMIENTO-quienresponde2am.png) 0 12% / cover no-repeat;
+  overflow: hidden;
+}
+
+.hero2-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 12px;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero2-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero2-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  color: #ffffff;
+}
 
 
 
@@ -398,6 +414,10 @@ section {
     transform: none;
 }
 
+.respaldo-text{
+    margin: 30px;
+}
+
 
 
 
@@ -407,11 +427,6 @@ section {
     background: var(--bg-gradient-2);
     padding: 30px 0;
     margin: 0;
-}
-
-.para-ti:hover{
-  transform: scale(1.1);
-  transition: 0.5s;
 }
 
 .para-ti-title{
@@ -455,19 +470,47 @@ section {
 
 
 
-/*=== financiero ===*/
-.financiero{
-    background: var(--bg-gradient-2);
-    padding: 30px 0;
-    margin: 0;
+
+
+/* === HERO3 === */
+.hero3 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+ align-items: center;
+  min-height: 70vh;
+  padding: 0;
+  margin: 0;
+  background: url(/img/PGW-3MANTENIMIENTO-evitaemergencias.png) 0 12% / cover no-repeat;
+  overflow: hidden;
 }
 
-.financiero:hover{
-  transform: scale(1.1);
-  transition: 0.5s;
+.hero3-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 12px;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
 }
 
+.hero3-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
 
+.hero3-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  color: #ffffff;
+}
 
 
 

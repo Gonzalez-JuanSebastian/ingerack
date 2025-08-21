@@ -87,10 +87,10 @@
             <div class="cont-info">
                 <div class="hero-cont" id="hero-cont">
                     <div class="hero-content">
-                        <h1 class="text-hero"><strong>¿Tu sistema de refrigeración o climatización está protegido… o estás esperando a que falle?</strong></h1>
-                        <p class="info-hero">Esperar a que algo se dañe cuesta más que repararlo. En Ingerack diseñamos mantenimientos inteligentes que aseguran tu operación, evitan pérdidas y te dan la tranquilidad de tener un equipo listo 24/7 para responder.</p>
+                        <h1 class="text-hero"><strong>Cada hora de falla en tu sistema de refrigeración puede costarte millones… ¿estás protegido?</strong></h1>
+                        <p class="info-hero">No dejes tu producción a la suerte. Nuestros mantenimientos inteligentes aseguran tu operación, evitan pérdidas y garantizan el funcionamiento de tus equipos, respaldado por contrato.</p>
                         <a href="#contacto">
-                            <button class="btn-solicitar">Quiero proteger mi negocio</button>
+                            <button class="btn-solicitar">Quiero asegurar mi operación ahora</button>
                         </a>
                         
                     <div>
@@ -99,28 +99,51 @@
         </div>
     </section>
 
+    
 
 
 
-
-    <section class="quien-responde-section">
+    <section class="significar-section">
+        <h2 >Lo que realmente pierdes cuando tu sistema falla</h2>
         <div class="container">
-            <h2>¿Quién responde si tu sistema falla hoy a las 2 a.m.?</h2>
-            <div class="quien-responde-cont">
+
+            <div class="significar-cont-1">
                 <div class="image">
-                    <img src="{{ asset('img/nos1.jpeg') }}" alt="Sostenibilidad en refrigeración">
+                    <img src="{{ asset('img/PGW-3MANTENIMIENTO-materiasprimas.png') }}" alt="Sostenibilidad en refrigeración">
                 </div>
                 <div class="text">
-                    <p>
-                        Tu negocio no se detiene. Y una falla técnica, por pequeña que sea, puede arruinar un turno de producción, una entrega o una semana entera. En Ingerack diseñamos mantenimientos inteligentes para que eso no te pase.
-
-
-                    </p>
+                    <h3>Pérdida de materias primas</h3>
                 </div>
             </div>
+            
+            <div class="significar-cont-2">
+                <div class="image">
+                    <img src="{{ asset('img/PGW-3MANTENIMIENTO-incumplimiento.png') }}" alt="Sostenibilidad en refrigeración">
+                </div>
+                <div class="text">
+                    <h3>Incumplimientos con clientes</h3>
+                </div>
+            </div>
+
+            <div class="significar-cont-1">
+                <div class="image">
+                    <img src="{{ asset('img/PGW-3MANTENIMIENTO-reputación.png') }}" alt="Sostenibilidad en refrigeración">
+                </div>
+                <div class="text">
+                    <h3>Deterioro en la reputación de tu empresa</h3>
+                </div>
+            </div>
+            
+            <div class="significar-cont-2">
+                <div class="image">
+                    <img src="{{ asset('img/PGW-2DISEÑO-nadiesehaceresponsable.png') }}" alt="Sostenibilidad en refrigeración">
+                </div>
+                <div class="text">
+                    <h3>Costos energéticos innecesarios</h3>
+                </div>
+            </div>  
         </div>
     </section>
-
 
 
 
@@ -132,11 +155,10 @@
             </div>
             <div class="fallar-list">
               <ul>
-                <li class="fallaList1">Fallos inesperados que detienen la producción y generan pérdidas.</li>
-                <li class="fallaList2">Emergencias atendidas con demora o con técnicos sin contexto del sistema a un precio desorbitado</li>
-                <li class="fallaList1">Equipos que consumen más energía cada mes sin un porque y sin que nadie lo note</li>
-                <li class="fallaList2">Falta de control y seguimiento técnico de tus equipos.</li>
-                <li class="fallaList1">No tener quién te respalde cuando más lo necesitas.</li>
+                <li class="fallaList1">Paradas inesperadas que frenan la producción y generan pérdidas</li>
+                <li class="fallaList2">Emergencias sin respuesta rápida o con técnicos sin experiencia</li>
+                <li class="fallaList1">Consumo de energía elevado sin una causa identificada</li>
+                <li class="fallaList2">Sin respaldo 24/7 cuando más lo necesitas</li>
               </ul>
             </div>
         </div>
@@ -146,87 +168,49 @@
 
 
 
-    <div class="section-transition0"></div>
-
-
-
-
-
-    <section class="significar-section">
-        <div class="container">
-
-            <div class="significar-cont-1">
-                <div class="image">
-                    <img src="{{ asset('img/nos1.jpeg') }}" alt="Sostenibilidad en refrigeración">
-                </div>
-                <div class="text">
-                    <h3>Pérdida de materias primas</h3>
+    <section id="section"> 
+        <div class="hero2" id="inicio">
+            <div class="cont-info">
+                <div class="hero-cont" id="hero-cont">
+                    <div class="hero2-content">
+                        <h2 class="text-hero"><strong>¿Quién responde si tu sistema falla hoy a las 2 a.m.?</strong></h2>
+                        <p class="info-hero">Una sola falla puede detener tu producción, arruinar toneladas de producto y hacerte incumplir con tus clientes.</p>
+                        <p class="info-hero">En Ingerack te respaldamos 24/7, con técnicos expertos que conocen tu sistema y actúan antes de que el problema se convierta en una pérdida.</p>
+                        <a href="#contacto">
+                            <button class="btn-solicitar">Solicitar respaldo ahora</button>
+                        </a>
+                        
+                    <div>
                 </div>
             </div>
-            
-            <div class="significar-cont-2">
-                <div class="image">
-                    <img src="{{ asset('img/nos1.jpeg') }}" alt="Sostenibilidad en refrigeración">
-                </div>
-                <div class="text">
-                    <h3>Incumplimientos con clientes</h3>
-                </div>
-            </div>
-
-            <div class="significar-cont-1">
-                <div class="image">
-                    <img src="{{ asset('img/nos1.jpeg') }}" alt="Sostenibilidad en refrigeración">
-                </div>
-                <div class="text">
-                    <h3>Deterioro en la reputación de tu empresa</h3>
-                </div>
-            </div>
-            
-            <div class="significar-cont-2">
-                <div class="image">
-                    <img src="{{ asset('img/nos1.jpeg') }}" alt="Sostenibilidad en refrigeración">
-                </div>
-                <div class="text">
-                    <h3>Costos energéticos innecesarios</h3>
-                </div>
-            </div>
-
-            <p>
-            Tu negocio no se detiene. Y una falla técnica, por pequeña que sea, puede arruinar un turno de producción, una entrega o una semana entera. En Ingerack diseñamos mantenimientos inteligentes para que eso no te pase.
-            </p>
         </div>
     </section>
 
 
 
 
-
-    <div class="section-transition1"></div>
-
-
-
-
-
-
     <section class="respaldo">
       <div class="container">
-        <h2>No vendemos mantenimiento. Te ofrecemos respaldo.</h2>
+        <h2>Así es como mantenemos tu producción segura 24/7</h2>
           <div class="respaldo-grid">
               <div class="respaldo-card">
-                  <h3>📊 Reportes energéticos incluidos</h3>
-                  <p> Monitoreamos el rendimiento de tu sistema y te damos visibilidad de tus costos y eficiencia.</p>
+                  <h3>📊 Monitoreo y reportes energéticos incluidos</h3>
+                  <p> Controlamos el rendimiento de tu sistema en tiempo real y te entregamos reportes claros para optimizar costos y evitar fallos por sobrecarga.</p>
               </div>
               <div class="respaldo-card">
-                  <h3>🔒 Contrato que garantiza continuidad</h3>
-                  <p>Firmamos el compromiso de que tu sistema funcionará. Si no, respondemos 24/7.</p>
+                  <h3>🔒 Continuidad garantizada por contrato</h3>
+                  <p>Nos comprometemos por escrito a mantener tu sistema operativo. Si algo falla, respondemos 24/7 para que no pierdas producción ni clientes.</p>
               </div>
               <div class="respaldo-card">
-                  <h3>🧠 Planes adaptados a tu realidad</h3>
-                  <p>Diseñamos el plan según tu tipo de operación, tus equipos, tus procesos. Nada estándar. Nada al azar.</p>
+                  <h3>🛠️ Planes 100% adaptados a tu operación</h3>
+                  <p>Diseñados según tus equipos, procesos y demanda real. Nada estándar, todo hecho para asegurar que tu inversión rinda al máximo.</p>
               </div>
           </div>
+
+          <p class="respaldo-text"><strong>Cada hora de inactividad te cuesta dinero. Nuestro objetivo es que no pierdas ni un minuto de producción.</strong></p>
       </div>
     </section>
+
 
 
 
@@ -239,12 +223,12 @@
         </div>
             <div class="para-ti-list">
               <ul>
-                <li class="tiList1">Tu empresa depende de cuartos fríos o climatización constante</li>
-                <li class="tiList2">No puedes permitirte una emergencia por refrigeración o climatización</li>
-                <li class="tiList1">Estás buscando reducir gastos energéticos de forma inteligente</li>
-                <li class="tiList2">Quieres tener un aliado técnico que responda a cualquier hora, no solo un técnico cada 6 meses</li>
-                <li class="tiList1">Te cuesta encontrar un proveedor confiable que responda</li>
-                <li class="tiList2">Has perdido dinero antes por fallas técnicas o equipos mal cuidados</li>
+                <li class="tiList1">Dependes de cuartos fríos o climatización constante y no puedes permitirte una falla.</li>
+                <li class="tiList2"> No quieres volver a perder producción ni clientes por un fallo técnico.</li>
+                <li class="tiList1">Buscas reducir tus costos energéticos con datos y control reales.</li>
+                <li class="tiList2">Quieres un aliado que responda 24/7.</li>
+                <li class="tiList1">Te cuesta encontrar un proveedor que cumpla lo que promete.</li>
+                <li class="tiList2">Ya has perdido dinero por fallos o mantenimientos mal hechos.</li>
               </ul>
             </div>
       </div>
@@ -254,15 +238,21 @@
 
 
 
-    <section class="financiero">
-      <div class="container">
-        <div class="financiero-title">
-            <h2>Evita emergencias. Asegura tu operación.</h2>
+    <section id="section"> 
+        <div class="hero3" id="inicio">
+            <div class="cont-info">
+                <div class="hero-cont" id="hero-cont">
+                    <div class="hero3-content">
+                        <h2 class="text-hero"><strong>Asegura tu cadena de frío antes de que sea tarde</strong></h2>
+                        <p class="info-hero">Déjanos revisar tu sistema sin costo y mostrarte cómo prevenir fallos, ahorrar energía y evitar pérdidas. Prevenir no solo es más barato: es más inteligente.</p>
+                        <a href="#contacto">
+                            <button class="btn-solicitar">Solicitar respaldo ahora</button>
+                        </a>
+                        
+                    <div>
+                </div>
+            </div>
         </div>
-        <div class="financiero-text">
-            <p> Déjanos revisar tu sistema sin costo y darte una visión clara de lo que podrías mejorar. Prevenir no solo es más barato: es más inteligente.</p>
-        </div>
-      </div>    
     </section>
 
 
