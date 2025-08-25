@@ -94,9 +94,13 @@
         <div class="cont-info">
             <div class="hero-cont" id="hero-cont">
               <div class="hero-content">
-                <h1 class="text-hero"><strong>Estás perdiendo dinero cada mes por un sistema de refrigeración ineficiente.</strong></h1>
-                <p class="info-hero">Las fallas recurrentes, las paradas de producción y el consumo energético excesivo no son inevitables. Podemos ayudarte a eliminarlos y recuperar tu rentabilidad.</p>
-                <a href="#contacto"><button class="btn-solicitar">Solicita un diagnostico gratis</button></a>
+                <p id="sub-titulo"><strong>POR UN SISTEMA DE REFRIGERACIÓN INEFICIENTE...</strong></p>
+                <h1 class="text-hero"><strong>ESTÁS PERDIENDO DINERO!</strong></h1>
+                <p id="hero-text" id="pos-titulo" >Las fallas recurrentes, las paradas de producción y el consumo energético excesivo</p> 
+                <p id="asento" id="hero-text"><strong>no son inevitables.</p></strong> 
+                <p id="hero-text">Podemos ayudarte a eliminarlos y recuperar tu rentabilidad.</p>
+                <a href="#contacto"><button class="btn-solicitar">!SOLICITA TU DIAGNÓSTICO GRATIS¡</button></a>
+                <p>***Respuesta Inmediata · Garantía contractual incluida***</p>
               </div>
             </div>
         </div>
@@ -131,7 +135,7 @@
 
                     <P> En Ingerack diseñamos proyectos que ahorran energía y evitan sobre costos desde el primer dia</p>
                     <div> 
-                       <a href="{{ url('proyecto') }}"><button  class="soluciones-botton">Descubre cómo optimizar tu inversión</button></a> 
+                       <a href="{{ url('proyecto') }}"><button  class="soluciones-botton">¡DESCUBRE CÓMO OPTIMIZAR TU INVERSIÓN!</button></a> 
                     </div>
                 </div>
 
@@ -146,7 +150,7 @@
 
                     <P>te damos respaldo 24/7 y garantizamos la continuidad de tu operación por contrato</p>
                     <div> 
-                        <a href="{{ url('mantenimiento') }}"><button class="soluciones-botton">Asegura tu operación hoy</button></a>
+                        <a href="{{ url('mantenimiento') }}"><button class="soluciones-botton">¡ASEGURA TU OPERACIÓN HOY</button></a>
                     </div>    
 
                 </div>
@@ -162,7 +166,7 @@
                     <P>Nos especializamos en detectar y corregir el problema de raíz para que vuelvas a operar rápido y sin sorpresas  </p>
 
                     <div> 
-                        <a href="{{ url('mantenimiento') }}"><button class="soluciones-botton">Recupera tu operación ahora</button></a> 
+                        <a href="{{ url('mantenimiento') }}"><button class="soluciones-botton">¡RECUPERA TU OPERACIÓN HOY!</button></a> 
                     </div>                
                 </div>
             </div>
@@ -187,7 +191,7 @@
 
     <section class="Diferentes">
         <div class="container">
-            <h2>Lo que nos hace diferentes</h2>
+            <h2>Razones Para Confiar tu Operación a Ingerack</h2>
 
             <div class="diferentes-grid">
                 <div id="soporte" class="diferentes-card">

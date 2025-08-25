@@ -88,13 +88,13 @@
             <div class="cont-info">
                 <div class="hero-cont" id="hero-cont">
                     <div class="hero-content">
-                        <h1 class="text-hero"><strong>¿Tu sistema de refrigeración o climatización está diseñado para gastar 40% más energía de la necesaria?</strong></h1>
-                        <p class="info-hero">Un diseño sobredimensionado o un cálculo de carga térmica incorrecto puede disparar tu consumo hasta un 40% y acortar la vida útil de tus equipos.Y lo peor… mientras pierdes dinero, no hay quien asuma la responsabilidad cuando empiezan los problemas.</p>
+                        <h1 class="text-hero"><strong>¿TU SISTEMA DE REFRIGERACIÓN O CLIMATIZACIÓN <br> <ins>ESTA DISEÑADO PARA GARANTIZAR 40% MAS</ins><br> ENERGÍA DE LA NECESARIA?</strong></h1>
+                        <p class="info-hero">Un diseño sobredimensionado o un cálculo de carga térmica incorrecto, puede disparar tu consumo hasta un 40% y acortar la vida útil de tus equipos.Y lo peor… mientras pierdes dinero y empiezan los problemas, no hay quien asuma la responsabilidad.</p>
                         <p>En Ingerack optimizamos tu proyecto desde el diseño hasta la instalación, con garantía escrita de rendimiento y eficiencia.</p>
                         <a href="#contacto">
-                          <button  class="btn-solicitar">Solicita una revisión sin costo </button>
+                          <button  class="btn-solicitar">¡SOLICITA UAN REVISION SIN COSTO!</button>
                         </a>
-
+                        <p>***Respuesta Inmediata · Garantía contractual incluida***</p>
                     <div>
                 </div>
             </div>
@@ -113,25 +113,25 @@
     <section class="quien-responde">
         <div class="container">
             <div class="quien-responde-title">
-                <h2>¿Quién responde si tu sistema no rinde como prometieron?</h2>
+                <h2>Señales de que tu proyecto está drenando tu dinero</h2>
             </div>
             
             <div class="quien-responde-list">
               <ul>
                 <li class="responde-item respondeList1">
-                    <div class="item">1. Fallas desde el diseño</div>
+                    <div class="item">Fallas desde el diseño</div>
                     <p class="hover-paragraph">Un cálculo de carga térmica inexacto o ignorar el crecimiento de tu operación puede dejarte con un sistema ineficiente desde el primer día.</p>
                 </li>
                 <li class="responde-item respondeList2">
-                    <div class="item">2. Sin garantía real de rendimiento</div>
+                    <div class="item">Sin garantía real de rendimiento</div>
                     <p class="hover-paragraph">Si tu proveedor no se compromete por contrato al consumo energético y capacidad de enfriamiento, quedas expuesto a sobre costos y bajo rendimiento.</p>
                 </li>
                 <li class="responde-item respondeList1">
-                    <div class="item">3. Sobre costos innecesarios</div>
+                    <div class="item">Sobre costos innecesarios</div>
                     <p class="hover-paragraph">Un diseño deficiente puede llevarte a comprar equipos más grandes y costosos de lo que realmente necesitas, afectando tu rentabilidad a largo plazo.</p>
                 </li>
                 <li class="responde-item respondeList2">
-                    <div class="item">4. Nadie se hace responsable después de instalar</div>
+                    <div class="item">Nadie se hace responsable después de instalar</div>
                     <p class="hover-paragraph">Si el sistema falla o consume más de lo prometido, ¿quién responde? Sin un respaldo contractual, la respuesta suele ser: nadie.</p>
                 </li>
               </ul>

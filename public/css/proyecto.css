@@ -56,8 +56,8 @@ p {
     height: 30px; 
     background: linear-gradient(
         to bottom,
-        var(--ingerack1),
-        #c2c9cf
+        #fff,
+        var(--bg-gradient-2)
     );
     margin: 0;
 }
@@ -176,6 +176,7 @@ section {
   margin: 0;
   background: url(/img/ImagenCuartofrio2IA.png) 0 12% / cover no-repeat;
   overflow: hidden;
+  max-width: 100%;
 }
 
 /* Overlay azul */
@@ -193,12 +194,10 @@ section {
   z-index: 2;
   display: flex;
   text-align: center;
-  padding: 3rem;
   border-radius: 12px;
   color: white;
   flex-direction: column;
   align-items: center;
-  max-width: 1200px;
   width: 100%;
   margin: 200px 0 10px 0;
 }
@@ -211,8 +210,14 @@ section {
 
 .hero-content p {
   font-size: 1.1rem;
-  margin-bottom: 2rem;
-  width: 100%;
+  width: 80%;
+}
+
+.hero p {
+    color: var(--text-light);
+    max-width: 80%;
+    line-height: 1.5;
+    margin: 20px 0;
 }
 
 .text-hero{
@@ -487,7 +492,6 @@ section {
 
 
 
-
 /* === lo que nos hace diferentes === */
 .sistema {
   background: var(--bg-gradient-2);
@@ -505,7 +509,7 @@ section {
 
 .sistema-card {
   position: relative; 
-  background: var(--white);
+  background: var(--white); /* siempre blanco por defecto */
   padding: 30px;
   border-radius: 15px;
   text-align: center;
@@ -517,7 +521,7 @@ section {
 
 .sistema-card .card-inner {
   position: relative;
-  z-index: 1;
+  z-index: 2; /* sobre fondo y overlay */
 }
 
 .sistema-card img {
@@ -534,6 +538,7 @@ section {
   color: var(--ingerack4);
   font-size: 20px;
   margin: 10px 0 5px;
+  transition: color 0.3s ease;
 }
 
 .sistema-card p {
@@ -541,114 +546,103 @@ section {
   color: #000;
   line-height: 1.4;
   margin: 0;
+  transition: color 0.3s ease;
 }
 
-/* Hover grupal: toda la tarjeta se escala y eleva */
+/* Hover grupal */
 .sistema-card:hover {
   transform: scale(1.05);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-/* Especial para la tarjeta con fondo dinámico y degradado solo en hover */
+/* === TARJETAS ESPECIALES === */
 #sistemaDiseño.special,
 #sistemaCompromiso.special,
 #sistemaProyecto.special {
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
+/* capa de fondo (invisible al inicio) */
 #sistemaDiseño.special::before,
 #sistemaCompromiso.special::before,
 #sistemaProyecto.special::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
   z-index: 0;
-  pointer-events: none;
-  border-radius: 1rem;
-  transition: background 0.3s ease;
+  opacity: 0;                /* oculto por defecto */
+  transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
-/* Al hacer hover se aplica fondo e overlay degradado */
-#sistemaDiseño.special:hover {
-  background: url(/img/PGW-2DISEÑO-diseñotecnicointeli.png) no-repeat center center;
-  background-size: cover;
-  border-radius: 1rem;
+#sistemaDiseño.special::before {
+  background-image: url(/img/PGW-2DISEÑO-diseñotecnicointeli.png);
+}
+#sistemaCompromiso.special::before {
+  background-image: url(/img/PGW-PRINCIPAL-Manoscontrato2.png);
+}
+#sistemaProyecto.special::before {
+  background-image: url(/img/PGW-PRINCIPALmantenimientoIng.png);
 }
 
-#sistemaCompromiso.special:hover{
-  background: url(/img/PGW-PRINCIPAL-Manoscontrato2.png) no-repeat center center ;
-  background-size: cover;
+/* overlay degradado */
+#sistemaDiseño.special::after,
+#sistemaCompromiso.special::after,
+#sistemaProyecto.special::after {
+  content: "";
+  position: absolute;
+  inset: 0;
   border-radius: 1rem;
+  background: transparent;
+  z-index: 1;
+  opacity: 0;                /* oculto por defecto */
+  transition: background 0.3s ease, opacity 0.3s ease;
 }
 
-#sistemaProyecto.special:hover{
-  background: url(/img/PGW-PRINCIPALmantenimientoIng.png) no-repeat center center ;
-  background-size: cover;
-  border-radius: 1rem;
-}
-
-
+/* hover -> aparece fondo + blur + overlay */
 #sistemaDiseño.special:hover::before,
 #sistemaCompromiso.special:hover::before,
 #sistemaProyecto.special:hover::before {
-  background: linear-gradient(to top, rgba(0, 86, 179, 0.6), rgba(0, 86, 179, 0.3), transparent);
+  filter: blur(4px);
+  opacity: 1;
 }
 
-/* Ocultar imagen interna al hacer hover para que se note el fondo */
+#sistemaDiseño.special:hover::after,
+#sistemaCompromiso.special:hover::after,
+#sistemaProyecto.special:hover::after {
+  opacity: 1;
+  background: linear-gradient(to top, rgb(0, 87, 179), rgba(0, 87, 179, 0.815), transparent);
+}
+
+/* ocultar icono interno */
 #sistemaDiseño.special:hover img,
 #sistemaCompromiso.special:hover img,
-#sistemaProyecto.special:hover img
- {
+#sistemaProyecto.special:hover img {
   opacity: 0;
 }
 
-/* Texto sobre el fondo sigue legible */
+/* texto limpio en hover */
 #sistemaDiseño.special:hover p,
 #sistemaCompromiso.special:hover p,
-#sistemaProyecto.special:hover p {
-    position: relative;
-    z-index: 1;
-    font-family: "HandelGo";
-    color: #ffffff;
-    -webkit-text-stroke: 1px var(--ingerack4, #006cb5); 
-    text-stroke: .5px var(--ingerack4, #006cb5); 
-    text-shadow: 
-        -0.5px -0.5px 0 var(--ingerack4, #006cb5),
-        0.5px -0.5px 0 var(--ingerack4, #006cb5),
-        -0.5px 0.5px 0 var(--ingerack4, #006cb5),
-        0.5px 0.5px 0 var(--ingerack4, #006cb5);
-}
-
-
+#sistemaProyecto.special:hover p,
 #sistemaDiseño.special:hover h3,
 #sistemaCompromiso.special:hover h3,
 #sistemaProyecto.special:hover h3 {
-    position: relative;
-    z-index: 1;
-    font-family: "HandelGo";
-    color:var(--ingerack4);
-    font-size: 2rem;
-    -webkit-text-stroke: 0.01px #ffffff;
-    text-stroke: 0.01px #ffffff;
-    
-    /* Fallback con text-shadow (más preciso que text-stroke en algunos navegadores) */
-    text-shadow:
-        -0.01px -0.01px 0 #ffffff,
-        0.01px -0.01px 0 #ffffff,
-        -0.01px 0.01px 0 #ffffff,
-        0.01px 0.01px 0 #ffffff;
+  color: #ffffff;
+  text-shadow: none;
+  -webkit-text-stroke: 0;
+  text-stroke: 0;
 }
 
-
-/* Ajustes responsivos */
+/* responsive */
 @media (max-width: 1024px) {
   .sistema-grid {
     flex-direction: column;
   }
 }
-
 
 
 
