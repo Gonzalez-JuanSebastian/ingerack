@@ -70,20 +70,24 @@
         </div>
       </div>
 
-      <nav>
+    <nav>
         <ul class="nav-links">
-          <li class="dropdown">
-            <a href="{{ url('/servicios') }}">Servicios</a>
-            <ul class="dropdown-menu">
-              <li><a href="{{ url('proyecto') }}">Proyectos</a></li>
-              <li><a href="{{ url('mantenimiento') }}">Mantenimiento</a></li>
-            </ul>
-          </li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#contacto">Contáctenos</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0);">Servicios</a>
+                <ul class="dropdown-menu">
+                    <li><a href="{{ url('proyecto') }}">Proyectos</a></li>
+                    <li><a href="{{ url('mantenimiento') }}">Mantenimiento</a></li>
+                </ul>
+            </li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contáctenos</a></li>
         </ul>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-      </nav>
+        <div class="menu-toggle" onclick="toggleMenu()" 
+             style="font-size: 28px; padding: 10px; cursor: pointer;">
+                ☰
+        </div>
+    
+        </nav>
     </header>
 
 
@@ -95,12 +99,12 @@
             <div class="hero-cont" id="hero-cont">
               <div class="hero-content">
                 <p id="sub-titulo"><strong>POR UN SISTEMA DE REFRIGERACIÓN INEFICIENTE...</strong></p>
-                <h1 class="text-hero"><strong>ESTÁS PERDIENDO DINERO!</strong></h1>
+                <h1 class="text-hero"><strong>¡ESTÁS PERDIENDO DINERO!</strong></h1>
                 <p id="hero-text" id="pos-titulo" >Las fallas recurrentes, las paradas de producción y el consumo energético excesivo</p> 
                 <p id="asento" id="hero-text"><strong>no son inevitables.</p></strong> 
                 <p id="hero-text">Podemos ayudarte a eliminarlos y recuperar tu rentabilidad.</p>
-                <a href="#contacto"><button class="btn-solicitar">!SOLICITA TU DIAGNÓSTICO GRATIS¡</button></a>
-                <p>***Respuesta Inmediata · Garantía contractual incluida***</p>
+                <a href="#contacto"><button class="btn-solicitar">¡SOLICITA TU DIAGNÓSTICO GRATIS!</button></a>
+                <p id="respuesta">***Respuesta Inmediata · Garantía contractual incluida***</p>
               </div>
             </div>
         </div>
@@ -131,9 +135,9 @@
 
                     <P> <strong>¿Sabes cuánto te cuesta un diseño de refrigeración sobredimensionado?</strong></p>
 
-                    <p>Un sistema mal calculado aumenta hasta un 40% tu consumo energético y acortar la vida útil de los equipos</p>
+                    <p>Un sistema mal calculado aumenta hasta un 40% tu consumo energético y acortar la vida útil de los equipos.</p>
 
-                    <P> En Ingerack diseñamos proyectos que ahorran energía y evitan sobre costos desde el primer dia</p>
+                    <P> En Ingerack diseñamos proyectos que ahorran energía y evitan sobre costos desde el primer dia.</p>
                     <div> 
                        <a href="{{ url('proyecto') }}"><button  class="soluciones-botton">¡DESCUBRE CÓMO OPTIMIZAR TU INVERSIÓN!</button></a> 
                     </div>
@@ -144,26 +148,26 @@
                     
                     <img src="{{ asset('img/Pagina web - contrato.png') }}" alt="Sostenibilidad en refrigeración">
 
-                    <P> <strong>Paradas inesperadas = hasta $100 millones en pérdidas</strong></p>
+                    <P> <strong>Paradas inesperadas = Pérdidas millonarias</strong></p>
 
-                    <p>Un programa de mantenimiento inteligente reduce un 90% los fallos críticos y ahorra hasta un 30% de energía </p>
+                    <p>Un programa de mantenimiento inteligente reduce un 90% los fallos críticos y ahorra hasta un 30% de energía.</p>
 
-                    <P>te damos respaldo 24/7 y garantizamos la continuidad de tu operación por contrato</p>
+                    <P>Nuestro contrato garantiza respaldo 27/7 y continuidad en tu operación.</p>
                     <div> 
-                        <a href="{{ url('mantenimiento') }}"><button class="soluciones-botton">¡ASEGURA TU OPERACIÓN HOY</button></a>
+                        <a href="{{ url('mantenimiento') }}"><button class="soluciones-botton">¡ASEGURA TU OPERACIÓN HOY!</button></a>
                     </div>    
 
                 </div>
                 <div class="soluciones-card">
-                    <h3>Corrección de fallas</h3>
+                    <h3>Mantenimiento Correctivo</h3>
 
                     <img src="{{ asset('img/Pagina web - correctivo 2.png') }}"> 
 
-                    <P><strong>Cada hora de parada por falla técnica es dinero perdido </strong></p>
+                    <P><strong>Una falla no corregida, es una bomba de tiempo muy costosa</strong></p>
 
-                    <p>Un fallo inesperado en tu sistema puede costarte millones en productos y producción perdida</p>
+                    <p>ndo no solucionas a tiempo un fallo en tu sistema, este puede costarte millones en pérdida</p>
 
-                    <P>Nos especializamos en detectar y corregir el problema de raíz para que vuelvas a operar rápido y sin sorpresas  </p>
+                    <P>Nos especializamos en detectar y corregir el problema de raíz para que vuelvas a operar rápido y sin sorpresas.</p>
 
                     <div> 
                         <a href="{{ url('mantenimiento') }}"><button class="soluciones-botton">¡RECUPERA TU OPERACIÓN HOY!</button></a> 
@@ -284,7 +288,7 @@
             <div class="content" id="content-nosotros">
                 <div class="text">
                     <p>
-                        Con más de 23 años de experiencia en refrigeración industrial, en Ingerack ayudamos a empresas de todo tamaño a mantener su operación segura, continua y eficiente.
+                        Con más de 20 años de experiencia en refrigeración industrial, en Ingerack ayudamos a empresas de todo tamaño a mantener su operación segura, continua y eficiente.
                     </p>
                     <p>
                         Desde 2003 diseñamos, instalamos y mantenemos sistemas de refrigeración y climatización adaptados a cada necesidad, desde cuartos fríos y cavas industriales hasta soluciones de confort para espacios comerciales.
@@ -423,6 +427,88 @@
     <a href="https://wa.me/573001234567" class="btn-whatsapp" target="_blank" aria-label="Chatea con nosotros por WhatsApp">
       <i class="fab fa-whatsapp"></i>
     </a>
+
+<script>
+// Comportamiento del header en móvil
+let lastScrollTop = 0;
+const header = document.querySelector('header');
+const scrollThreshold = 100;
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+        header.classList.add('header-hidden');
+    } else {
+        header.classList.remove('header-hidden');
+    }
+    
+    lastScrollTop = scrollTop;
+});
+
+// Tu código existente para el menú
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+    
+    if (!navLinks.classList.contains('show')) {
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+            dropdown.classList.remove('active');
+        });
+    }
+}
+
+// Manejar dropdowns en móviles
+document.querySelectorAll('.dropdown > a').forEach(dropdownLink => {
+    dropdownLink.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const dropdown = this.parentElement;
+            const wasActive = dropdown.classList.contains('active');
+            
+            document.querySelectorAll('.dropdown').forEach(d => {
+                d.classList.remove('active');
+            });
+            
+            if (!wasActive) {
+                dropdown.classList.add('active');
+            }
+        }
+    });
+});
+
+// Cerrar menú al hacer clic en un enlace que no sea dropdown
+document.querySelectorAll('.nav-links a:not(.dropdown > a)').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.remove('show');
+            
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+});
+
+// Cerrar menú al hacer clic fuera de él
+document.addEventListener('click', function(e) {
+    if (window.innerWidth <= 768) {
+        const navLinks = document.querySelector('.nav-links');
+        const menuToggle = document.querySelector('.menu-toggle');
+        
+        if (navLinks.classList.contains('show') && 
+            !navLinks.contains(e.target) && 
+            !menuToggle.contains(e.target)) {
+            navLinks.classList.remove('show');
+            
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    }
+});
+</script>
 
 </body>
 

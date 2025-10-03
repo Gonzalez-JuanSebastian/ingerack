@@ -36,11 +36,6 @@ p {
     font-family: "ubuntu";
 }
 
-
-
-
-
-
 /* === Transiciones === */
 .section-transition {
     height: 30px; 
@@ -56,7 +51,7 @@ p {
     height: 30px; 
     background: linear-gradient(
         to bottom,
-        #fff,
+        var(--ingerack1),
         var(--bg-gradient-2)
     );
     margin: 0;
@@ -126,8 +121,6 @@ p {
     transition: .5s;
 }
 
-
-
 /* === globales === */
 h2 {
     font-family: "HandelGo", sans-serif;
@@ -153,12 +146,7 @@ p {
 section {
     padding: 140px 20px;
     text-align: center;
-
 }
-
-
-
-
 
 /* === HERO === */
 #section{
@@ -171,8 +159,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  min-height: 70vh;
-  padding: 0;
+  min-height: 98vh;
+  padding: 10px;
   margin: 0;
   background: url(/img/ImagenCuartofrio2IA.png) 0 12% / cover no-repeat;
   overflow: hidden;
@@ -220,6 +208,10 @@ section {
     margin: 20px 0;
 }
 
+#info-hero{
+    font-size: 23px;
+}
+
 .text-hero{
     color: #ffffff;
 }
@@ -251,10 +243,6 @@ section {
 .hero2 p{
     font-size: 20px ;
 }
-
-
-
-
 
 /*=== quien responde ===*/
 .quien-responde {
@@ -309,12 +297,12 @@ section {
 }
 
 .item{
-    color: #ff0000;
+    color: var(--ingerack5);
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     justify-content: center;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .responde-item {
@@ -419,49 +407,6 @@ section {
     transition: all 0.3s ease;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .quien-responde-title h2 {
-        font-size: 2rem;
-    }
-    
-    .responde-item .item-header {
-        font-size: 1.1rem;
-    }
-    
-    .responde-item .hover-paragraph {
-        padding: 0 20px;
-        font-size: 1rem;
-    }
-    
-    .responde-item:hover .hover-paragraph {
-        padding: 15px 20px 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .quien-responde-title h2 {
-        font-size: 1.7rem;
-    }
-    
-    .responde-item {
-        padding: 15px 20px;
-    }
-    
-    .responde-item .item-header {
-        font-size: 1rem;
-    }
-    
-    .responde-item .item-header::before {
-        width: 24px;
-        height: 24px;
-        margin-right: 10px;
-    }
-}
-
-
-
-
 /*=== historias ===*/
 .historias{
     background: #fff;
@@ -473,24 +418,20 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Se adapta a móviles */
-  gap: 40px; /* Espacio entre imágenes */
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .historias-galeria img {
-  height: 200px; /* Ajusta según tus logos */
+  height: 200px;
   width: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
 
 .historias-galeria img:hover {
-    transform: scale(1.05); /* Animación sutil al pasar el mouse */
+    transform: scale(1.05);
 }
-
-
-
-
 
 /* === lo que nos hace diferentes === */
 .sistema {
@@ -509,7 +450,7 @@ section {
 
 .sistema-card {
   position: relative; 
-  background: var(--white); /* siempre blanco por defecto */
+  background: var(--white);
   padding: 30px;
   border-radius: 15px;
   text-align: center;
@@ -521,7 +462,7 @@ section {
 
 .sistema-card .card-inner {
   position: relative;
-  z-index: 2; /* sobre fondo y overlay */
+  z-index: 2;
 }
 
 .sistema-card img {
@@ -574,7 +515,7 @@ section {
   background-size: cover;
   border-radius: 1rem;
   z-index: 0;
-  opacity: 0;                /* oculto por defecto */
+  opacity: 0;
   transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
@@ -598,7 +539,7 @@ section {
   border-radius: 1rem;
   background: transparent;
   z-index: 1;
-  opacity: 0;                /* oculto por defecto */
+  opacity: 0;
   transition: background 0.3s ease, opacity 0.3s ease;
 }
 
@@ -637,23 +578,7 @@ section {
   text-stroke: 0;
 }
 
-/* responsive */
-@media (max-width: 1024px) {
-  .sistema-grid {
-    flex-direction: column;
-  }
-}
-
-
-
-
-
-
-
-
-
 /* === diseñamos ===*/
-/* --- Sección general --- */
 .diseñamos {
   padding: 4rem 2rem;
   background: var(--bg-gradient-2);
@@ -695,7 +620,7 @@ section {
 }
 
 .refrigeracion {
-  background-color: #E5F6FF;
+  background-color: var(--ingerack2);
 }
 
 .carousel-item h3 {
@@ -745,15 +670,10 @@ section {
   right: 20px;
 }
 
-
-
-
-
 /*=== para ti ===*/
 .para-ti{
     background: var(--bg-gradient-2);
 }
-
 
 .para-ti-title{
     font-size: 2rem;
@@ -777,12 +697,12 @@ section {
 
 .tiList1,
 .tiList2{
+    color: #006cb5;
     padding: 10px 20px;
     margin: 10px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
-
 }
 
 .tiList1:hover,
@@ -792,8 +712,6 @@ section {
     transform: scale(1.1);
     transition: 0.5s;
 }
-
-
 
 /* === SECCIÓN CONTACTO === */
 #contacto {
@@ -808,7 +726,7 @@ section {
 #contacto h2{
     font-size: 2rem;
 }
-/* Contenedor principal */
+
 .contacto-container {
     display: flex;
     gap: 50px;
@@ -816,7 +734,6 @@ section {
     width: 100%;
 }
 
-/* Tarjeta de información */
 .contacto-info {
     flex: 1;
     background: white;
@@ -826,7 +743,6 @@ section {
     text-align: center; 
 }
 
-/* Contenedor de datos (centrado) */
 .contacto-datos {
     margin-top: 20px;
     display: flex;
@@ -834,7 +750,6 @@ section {
     align-items: center; 
 }
 
-/* Items de datos (teléfono, email, ubicación) */
 .dato {
     display: flex;
     align-items: center;
@@ -940,10 +855,6 @@ section {
     to { opacity: 1; transform: translateY(0); }
 }
 
-
-
-
-
 /* SECCIÓN DE REDES SOCIALES */
 #redes-sociales {
     text-align: center;
@@ -986,9 +897,6 @@ section {
     filter: brightness(1.2);
 }
 
-
-
-
 /* WhatsApp */
 .btn-whatsapp {
     text-decoration: none;
@@ -1012,4 +920,358 @@ section {
 
 .btn-whatsapp:hover {
   transform: scale(1.1);
+}
+
+/* === RESPONSIVE STYLES === */
+
+/* PC Pequeña (1024px) */
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .quien-responde-title h2 {
+        font-size: 2.2rem;
+    }
+    
+    .item {
+        font-size: 24px;
+    }
+
+    .info-hero{
+        display: none;
+    }
+    
+    
+    .sistema-grid {
+        flex-wrap: wrap;
+    }
+    
+    .sistema-card {
+        flex: 1 1 calc(50% - 20px);
+        min-width: 280px;
+    }
+    
+    .historias-galeria {
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .historias-galeria img {
+        height: 150px;
+    }
+    
+    .contacto-container {
+        gap: 30px;
+    }
+}
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: transform 0.3s ease;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .header-hidden {
+        transform: translateY(-100%);
+    }
+    
+    /* Ajustar el padding-top del hero para compensar el header fijo */
+    .hero {
+        padding-top: 150px;
+    }
+    
+    /* Ajustar el padding-top de las secciones para que no queden ocultas bajo el header */
+    section {
+        scroll-margin-top: 80px;
+    }
+    
+    /* Ajustar el menú desplegable para que funcione con el header fijo */
+    .nav-links {
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    .section-transition00{
+        display: none;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+    
+    .hero,
+    .hero2 {
+        min-height: 50vh;
+    }
+    
+    .hero-content {
+        margin: 150px 0 10px 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        width: 90%;
+    }
+    
+    .btn-solicitar {
+        font-size: 1.2rem;
+        padding: 0.6em 1.2em;
+    }
+    
+    .quien-responde {
+        padding: 60px 20px;
+    }
+    
+    .item {
+        font-size: 20px;
+    }
+    
+    .responde-item {
+        padding: 15px 20px;
+    }
+    
+    .responde-item .hover-paragraph {
+        padding: 0 20px;
+        font-size: 1rem;
+    }
+    
+    .responde-item:hover .hover-paragraph {
+        padding: 15px 20px 10px;
+    }
+    
+    .sistema {
+        padding: 60px 20px;
+    }
+    
+    .sistema-card {
+        flex: 1 1 100%;
+        padding: 20px;
+    }
+    
+    .diseñamos {
+        padding: 40px 20px;
+    }
+    
+    .diseñamos h2 {
+        font-size: 1.6rem;
+    }
+    
+    .carousel-item {
+        padding: 1.5rem;
+    }
+    
+    .carousel-item h3 {
+        font-size: 1.2rem;
+    }
+    
+    .carousel-item li {
+        font-size: 1rem;
+    }
+    
+    .para-ti-list li {
+        font-size: 1rem;
+    }
+    
+    .contacto-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    
+    #redes-sociales {
+        padding: 60px 20px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    section {
+        padding: 80px 20px;
+    }
+}
+
+/* Celular (480px) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        margin: 15px 10px;
+    }
+    
+    .hero,
+    .hero2 {
+        min-height: 40vh;
+    }
+    
+    .hero-content {
+        margin: 120px 0 10px 0;
+        padding: 0 15px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .sub-titulo{
+        display: none;
+    }
+    
+    .btn-solicitar {
+        font-size: 1rem;
+        padding: 0.5em 1em;
+    }
+    
+    .quien-responde {
+        padding: 40px 15px;
+    }
+    
+    .quien-responde-title h2 {
+        font-size: 1.7rem;
+    }
+    
+    .item {
+        font-size: 18px;
+    }
+    
+    .responde-item {
+        padding: 12px 15px;
+    }
+    
+    .responde-item .item-header {
+        font-size: 1rem;
+    }
+    
+    .responde-item .item-header::before {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+    
+    .sistema {
+        padding: 40px 15px;
+    }
+    
+    .sistema-card {
+        padding: 15px;
+    }
+    
+    .sistema-card h3 {
+        font-size: 18px;
+    }
+    
+    .sistema-card p {
+        font-size: 15px;
+    }
+    
+    .diseñamos h2 {
+        font-size: 1.4rem;
+    }
+    
+    .carousel-item {
+        padding: 1rem;
+    }
+    
+    .carousel-item h3 {
+        font-size: 1.1rem;
+    }
+    
+    .carousel-item li {
+        font-size: 0.9rem;
+    }
+    
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1.5rem;
+    }
+    
+    .historias-galeria {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .historias-galeria img {
+        height: 120px;
+    }
+    
+    .para-ti-list li {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+    
+    #contacto {
+        padding: 60px 15px;
+    }
+    
+    .contacto-info,
+    .contacto-form {
+        padding: 20px;
+    }
+    
+    #redes-sociales {
+        padding: 60px 15px;
+    }
+    
+    .red-social {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .section-transition,
+    .section-transition00,
+    .section-transition0,
+    .section-transition0-5,
+    .section-transition1,
+    .section-transition2 {
+        height: 20px;
+    }
+}
+
+/* Pequeños celulares (360px) */
+@media (max-width: 360px) {
+    .hero-content h1 {
+        font-size: 1.4rem;
+    }
+    
+    .btn-solicitar {
+        font-size: 0.9rem;
+    }
+    
+    .item {
+        font-size: 16px;
+    }
+    
+    .sistema-card img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .carousel-item h3 {
+        font-size: 1rem;
+    }
+    
+    .carousel-item li {
+        font-size: 0.8rem;
+    }
+    
+    .para-ti-list li {
+        font-size: 0.8rem;
+    }
 }

@@ -65,17 +65,21 @@
         </div>  
 
         <nav>
-          <ul class="nav-links">
+        <ul class="nav-links">
             <li class="dropdown">
-              <a href="   ">Servicios</a>
-              <ul class="dropdown-menu">
-                <li><a href="{{ url('proyecto') }}">Proyectos</a></li>
-                <li><a href="{{ url('mantenimiento') }}">Mantenimiento</a></li>
-              </ul>
+                <a href="javascript:void(0);">Servicios</a>
+                <ul class="dropdown-menu">
+                    <li><a href="{{ url('proyecto') }}">Proyectos</a></li>
+                    <li><a href="{{ url('mantenimiento') }}">Mantenimiento</a></li>
+                </ul>
             </li>
+            <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#contacto">Contáctenos</a></li>
-          </ul>
-          <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()" 
+             style="font-size: 28px; padding: 10px; cursor: pointer;">
+                ☰
+        </div>    
         </nav>
     </header>
 
@@ -88,13 +92,13 @@
             <div class="cont-info">
                 <div class="hero-cont" id="hero-cont">
                     <div class="hero-content">
-                        <h1 class="text-hero"><strong>¿TU SISTEMA DE REFRIGERACIÓN O CLIMATIZACIÓN <br> <ins>ESTA DISEÑADO PARA GARANTIZAR 40% MAS</ins><br> ENERGÍA DE LA NECESARIA?</strong></h1>
-                        <p class="info-hero">Un diseño sobredimensionado o un cálculo de carga térmica incorrecto, puede disparar tu consumo hasta un 40% y acortar la vida útil de tus equipos.Y lo peor… mientras pierdes dinero y empiezan los problemas, no hay quien asuma la responsabilidad.</p>
-                        <p>En Ingerack optimizamos tu proyecto desde el diseño hasta la instalación, con garantía escrita de rendimiento y eficiencia.</p>
+                        <h1 class="text-hero"> ¿TU SISTEMA DE REFRIGERACIÓN <br> <strong> ESTÁ GASTANDO MÁS ENERGÍA</strong><br> DE LA PROYECTADA?</h1>
+                        <p id="info-hero">Un diseño sobredimensionado o un cálculo de cargas térmica incorrecto, puede disparar tu consumo hasta un 40% y acortar la vida útil de tus equipos. Empiezas tu proyecto perdiendo dinero y con problemas, lo peor… no hay quien asuma la responsabilidad.</p>
+                        <p id="info-hero" class="sub-titulo">En Ingerack optimizamos tu proyecto desde el diseño hasta la instalación, con garantía escrita de rendimiento y eficiencia.</p>
                         <a href="#contacto">
-                          <button  class="btn-solicitar">¡SOLICITA UAN REVISION SIN COSTO!</button>
+                          <button  class="btn-solicitar">¡SOLICITA UNA SOLICITA UNA REVISIÓN SIN COSTO SIN COSTO!</button>
                         </a>
-                        <p>***Respuesta Inmediata · Garantía contractual incluida***</p>
+                        <p class="sub-titulo">***Respuesta Inmediata · Garantía contractual incluida***</p>
                     <div>
                 </div>
             </div>
@@ -144,24 +148,6 @@
 
 
     <div class="section-transition00"></div>
-
-
-
-
-
-    <div class="hero hero2" id="inicio">
-        <div class="cont-info">
-            <div class="hero-cont" id="hero-cont">
-              <div class="hero-content">
-                <h2 class="text-hero"><strong>Un mal diseño de refrigeración puede costarte hasta un 40% más cada mes</strong></h2>
-                <p class="info-hero">Facturas de energía infladas, equipos que fallan antes de tiempo y pérdidas por paradas inesperadas… todo por un proyecto mal calculado desde el inicio.</p>
-                <p class="info-hero"> <strong> En Ingerack diseñamos soluciones que evitan sobre costos y mantienen tu operación funcionando al 100%, con respaldo por contrato.</strong></p>
-              </div>
-            </div>
-        </div>
-
-    </div>
-
 
 
 
@@ -345,7 +331,7 @@
     <section class="para-ti">
       <div class="container">
         <div class="para-ti-title">
-            <h2>Este servicio es para ti si…</h2>
+            <h2>¡Es para ti! Si…</h2>
         </div>
             <div class="para-ti-list">
               <ul>
@@ -470,6 +456,89 @@
     <a href="https://wa.me/573001234567" class="btn-whatsapp" target="_blank" aria-label="Chatea con nosotros por WhatsApp">
       <i class="fab fa-whatsapp"></i>
     </a>
+
+<script>
+// Comportamiento del header en móvil
+let lastScrollTop = 0;
+const header = document.querySelector('header');
+const scrollThreshold = 100;
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+        header.classList.add('header-hidden');
+    } else {
+        header.classList.remove('header-hidden');
+    }
+    
+    lastScrollTop = scrollTop;
+});
+
+// Tu código existente para el menú
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+    
+    if (!navLinks.classList.contains('show')) {
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+            dropdown.classList.remove('active');
+        });
+    }
+}
+
+// Manejar dropdowns en móviles
+document.querySelectorAll('.dropdown > a').forEach(dropdownLink => {
+    dropdownLink.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const dropdown = this.parentElement;
+            const wasActive = dropdown.classList.contains('active');
+            
+            document.querySelectorAll('.dropdown').forEach(d => {
+                d.classList.remove('active');
+            });
+            
+            if (!wasActive) {
+                dropdown.classList.add('active');
+            }
+        }
+    });
+});
+
+// Cerrar menú al hacer clic en un enlace que no sea dropdown
+document.querySelectorAll('.nav-links a:not(.dropdown > a)').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.remove('show');
+            
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+});
+
+// Cerrar menú al hacer clic fuera de él
+document.addEventListener('click', function(e) {
+    if (window.innerWidth <= 768) {
+        const navLinks = document.querySelector('.nav-links');
+        const menuToggle = document.querySelector('.menu-toggle');
+        
+        if (navLinks.classList.contains('show') && 
+            !navLinks.contains(e.target) && 
+            !menuToggle.contains(e.target)) {
+            navLinks.classList.remove('show');
+            
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    }
+});
+</script>
+
 
 </body>
 </html> 

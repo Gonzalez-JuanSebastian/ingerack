@@ -52,29 +52,36 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-          <a href="{{ url('inicio') }}" >
+      <div class="logo">
+          <a id="logo" href="{{ url('inicio') }}" >
             <img src="{{ asset('img/logo.png') }}" alt="Ingerack">
           </a>
-          <div class="slogan-container">
-            <div class="slogan">
-              <h3 class="text-slogan">Frío Perfecto</h3>
-            </div>
+
+        <div class="slogan-container">
+          <div class="slogan">
+            <h3 class="text-slogan">Frío Perfecto</h3>
           </div>
-        </div>  
+        </div>
+      </div>
 
         <nav>
-          <ul class="nav-links">
+        <ul class="nav-links">
             <li class="dropdown">
-              <a href="   ">Servicios</a>
-              <ul class="dropdown-menu">
-                <li><a href="{{ url('proyecto') }}">Proyectos</a></li>
-                <li><a href="{{ url('mantenimiento') }}">Mantenimiento</a></li>
-              </ul>
+                <a href="javascript:void(0);">Servicios</a>
+                <ul class="dropdown-menu">
+                    <li><a href="{{ url('proyecto') }}">Proyectos</a></li>
+                    <li><a href="{{ url('mantenimiento') }}">Mantenimiento</a></li>
+                </ul>
             </li>
-            <li><a href="#contacto">Contáctanos</a></li>
-          </ul>
-          <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contáctenos</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()" 
+             style="font-size: 28px; padding: 10px; cursor: pointer;">
+                ☰
+        </div>
+
+    
         </nav>
     </header>
 
@@ -87,10 +94,14 @@
             <div class="cont-info">
                 <div class="hero-cont" id="hero-cont">
                     <div class="hero-content">
-                        <h1 class="text-hero"><strong>Cada hora de falla en tu sistema de refrigeración puede costarte millones… ¿estás protegido?</strong></h1>
+                        <h1 class="text-hero">UNA FALLA EN TU SISTEMA DE REFRIGERACIÓN</h1>
+                        <br>
+                        <h1 id="tituloAcento">PUEDE COSTARTE MILLONES...</h1>
+                        <h1 class="text-hero">¿ESTÁS PROTEGIDO?</h1>
+
                         <p class="info-hero">No dejes tu producción a la suerte. Nuestros mantenimientos inteligentes aseguran tu operación, evitan pérdidas y garantizan el funcionamiento de tus equipos, respaldado por contrato.</p>
                         <a href="#contacto">
-                            <button class="btn-solicitar">Quiero asegurar mi operación ahora</button>
+                            <button class="btn-solicitar">¡QUIERO ASEGURAR MI OPERACIÓN AHORA!</button>
                         </a>
                         
                     <div>
@@ -168,19 +179,21 @@
 
 
 
-    <section id="section"> 
-        <div class="hero2" id="inicio">
-            <div class="cont-info">
-                <div class="hero-cont" id="hero-cont">
-                    <div class="hero2-content">
-                        <h2 class="text-hero"><strong>¿Quién responde si tu sistema falla hoy a las 2 a.m.?</strong></h2>
-                        <p class="info-hero">Una sola falla puede detener tu producción, arruinar toneladas de producto y hacerte incumplir con tus clientes.</p>
-                        <p class="info-hero">En Ingerack te respaldamos 24/7, con técnicos expertos que conocen tu sistema y actúan antes de que el problema se convierta en una pérdida.</p>
+    <section class="responde-section">
+        <div class="container">
+            <div class="content" class="responde-cont">
+                <div class="image">
+                    <img id="respondeImg" src="{{ asset('img/PGW-3MANTENIMIENTO-quienresponde2am.png') }}" alt="Sostenibilidad en refrigeración">
+                </div>
+                <div class="text">
+                    <h2>¿QUIEN RESPONDE SI TU SISTEMA  FALLA HOY A LAS 2 A.M</h2>
+                    <p>
+                        EN INGERACK RESPONDEMOS 24/7.Con técnicos expertos que conocen tu sistema y actúan antes de que el problema se convierta en una pérdida.
+                    </p>
+
                         <a href="#contacto">
-                            <button class="btn-solicitar">Solicitar respaldo ahora</button>
+                            <button id="respondeBTN" class="btn-solicitar">¡SOLICITAR RESPALDO AHORA!</button>
                         </a>
-                        
-                    <div>
                 </div>
             </div>
         </div>
@@ -189,50 +202,80 @@
 
 
 
-    <section class="respaldo">
-      <div class="container">
-        <h2>Así es como mantenemos tu producción segura 24/7</h2>
-          <div class="respaldo-grid">
-              <div class="respaldo-card">
-                  <h3>📊 Monitoreo y reportes energéticos incluidos</h3>
-                  <p> Controlamos el rendimiento de tu sistema en tiempo real y te entregamos reportes claros para optimizar costos y evitar fallos por sobrecarga.</p>
-              </div>
-              <div class="respaldo-card">
-                  <h3>🔒 Continuidad garantizada por contrato</h3>
-                  <p>Nos comprometemos por escrito a mantener tu sistema operativo. Si algo falla, respondemos 24/7 para que no pierdas producción ni clientes.</p>
-              </div>
-              <div class="respaldo-card">
-                  <h3>🛠️ Planes 100% adaptados a tu operación</h3>
-                  <p>Diseñados según tus equipos, procesos y demanda real. Nada estándar, todo hecho para asegurar que tu inversión rinda al máximo.</p>
-              </div>
-          </div>
 
-          <p class="respaldo-text"><strong>Cada hora de inactividad te cuesta dinero. Nuestro objetivo es que no pierdas ni un minuto de producción.</strong></p>
-      </div>
-    </section>
+    <section class="Diferentes">
+        <div class="container">
+            <h2>Razones Para Confiar tu Operación a Ingerack</h2>
 
-
-
-
-
-
-    <section class="para-ti">
-      <div class="container">
-        <div class="para-ti-title">
-            <h2>Este servicio es para ti si…</h2>
-        </div>
-            <div class="para-ti-list">
-              <ul>
-                <li class="tiList1">Dependes de cuartos fríos o climatización constante y no puedes permitirte una falla.</li>
-                <li class="tiList2"> No quieres volver a perder producción ni clientes por un fallo técnico.</li>
-                <li class="tiList1">Buscas reducir tus costos energéticos con datos y control reales.</li>
-                <li class="tiList2">Quieres un aliado que responda 24/7.</li>
-                <li class="tiList1">Te cuesta encontrar un proveedor que cumpla lo que promete.</li>
-                <li class="tiList2">Ya has perdido dinero por fallos o mantenimientos mal hechos.</li>
-              </ul>
+            <div class="diferentes-grid">
+                <div id="soporte" class="diferentes-card">
+                    <div class="card-content">
+                        <h3>Monitoreo y reportes energéticos incluidos</h3>
+                        <p class="hover-text">Controlamos el rendimiento de tu sistema en tiempo real y te entregamos reportes claros para optimizar costos y evitar fallos por sobrecarga.</p>
+                    </div>
+                </div>
+                <div id="experiencia" class="diferentes-card">
+                    <div class="card-content">
+                        <h3>Continuidad garantizada por contrato</h3>
+                        <p class="hover-text">Nos comprometemos por escrito a mantener tu sistema operativo. Si algo falla, respondemos 24/7 para que no pierdas producción ni clientes.</p>
+                    </div>
+                </div>
+                <div id="tecnologia" class="diferentes-card">
+                    <div class="card-content">
+                        <h3>Planes 100% adaptados a tu operación</h3>
+                        <p class="hover-text">Diseñados según tus equipos, procesos y demanda real. Nada estándar, todo hecho para asegurar que tu inversión rinda al máximo.</p>
+                    </div>
+                </div>
             </div>
-      </div>
+        </div>
     </section>
+
+
+
+
+
+
+    <section class="Diferentes">
+        <div class="container">
+            <h2>Razones Para Confiar tu Operación a Ingerack</h2>
+
+            <div class="diferentes-grid">
+                <div id="soporte" class="diferentes-card">
+                    <div class="card-content">
+                        <h3>Dependes de cuartos fríos o climatización constante y no puedes permitirte una falla.</h3>
+                    </div>
+                </div>
+                <div id="experiencia" class="diferentes-card">
+                    <div class="card-content">
+                        <h3>No quieres volver a perder producción ni clientes por un fallo técnico.</h3>
+                    </div>
+                </div>
+                <div id="tecnologia" class="diferentes-card">
+                    <div class="card-content">
+                        <h3>Buscas reducir tus costos energéticos con datos y control reales.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="diferentes-grid">
+                <div id="soporte" class="diferentes-card">
+                    <div class="card-content">
+                        <h3>Quieres un aliado que responda 24/7.</h3>
+                    </div>
+                </div>
+                <div id="experiencia" class="diferentes-card">
+                    <div class="card-content">
+                        <h3>Te cuesta encontrar un proveedor que cumpla lo que promete.</h3>
+                    </div>
+                </div>
+                <div id="tecnologia" class="diferentes-card">
+                    <div class="card-content">
+                        <h3>Ya has perdido dinero por fallos o mantenimientos mal hechos.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 
@@ -246,7 +289,7 @@
                         <h2 class="text-hero"><strong>Asegura tu cadena de frío antes de que sea tarde</strong></h2>
                         <p class="info-hero">Déjanos revisar tu sistema sin costo y mostrarte cómo prevenir fallos, ahorrar energía y evitar pérdidas. Prevenir no solo es más barato: es más inteligente.</p>
                         <a href="#contacto">
-                            <button class="btn-solicitar">Solicitar respaldo ahora</button>
+                            <button class="btn-solicitar">¡SOLICITAR RESPALDO AHORA!</button>
                         </a>
                         
                     <div>
@@ -368,6 +411,88 @@
     <a href="https://wa.me/573001234567" class="btn-whatsapp" target="_blank" aria-label="Chatea con nosotros por WhatsApp">
       <i class="fab fa-whatsapp"></i>
     </a>
+
+<script>
+// Comportamiento del header en móvil
+let lastScrollTop = 0;
+const header = document.querySelector('header');
+const scrollThreshold = 100;
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+        header.classList.add('header-hidden');
+    } else {
+        header.classList.remove('header-hidden');
+    }
+    
+    lastScrollTop = scrollTop;
+});
+
+// Tu código existente para el menú
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+    
+    if (!navLinks.classList.contains('show')) {
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+            dropdown.classList.remove('active');
+        });
+    }
+}
+
+// Manejar dropdowns en móviles
+document.querySelectorAll('.dropdown > a').forEach(dropdownLink => {
+    dropdownLink.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const dropdown = this.parentElement;
+            const wasActive = dropdown.classList.contains('active');
+            
+            document.querySelectorAll('.dropdown').forEach(d => {
+                d.classList.remove('active');
+            });
+            
+            if (!wasActive) {
+                dropdown.classList.add('active');
+            }
+        }
+    });
+});
+
+// Cerrar menú al hacer clic en un enlace que no sea dropdown
+document.querySelectorAll('.nav-links a:not(.dropdown > a)').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.remove('show');
+            
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+});
+
+// Cerrar menú al hacer clic fuera de él
+document.addEventListener('click', function(e) {
+    if (window.innerWidth <= 768) {
+        const navLinks = document.querySelector('.nav-links');
+        const menuToggle = document.querySelector('.menu-toggle');
+        
+        if (navLinks.classList.contains('show') && 
+            !navLinks.contains(e.target) && 
+            !menuToggle.contains(e.target)) {
+            navLinks.classList.remove('show');
+            
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    }
+});
+</script>
 
 </body>
 </html>
