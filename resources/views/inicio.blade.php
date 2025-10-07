@@ -20,8 +20,8 @@
 
 
     <!-- Meta -->   
-    <meta name="description" content="Ingerack SAS - Más de 20 años de experiencia en diseño, instalación y mantenimiento de sistemas de refrigeración industrial y climatización. Soluciones energéticamente eficientes y sostenibles.">
-    <meta name="keywords" content="refrigeración industrial, aire acondicionado industrial, mantenimiento sistemas de frío, climatización industrial, eficiencia energética, montaje equipos refrigeración, ingeniería en refrigeración,Sistema de refrigeración en valle del cauca, aire acondicionado en valle del cauca, productos de refrigeración en valle del cauca, servicios de refrigeración en valle del cauca, asesoría en sistemas de refrigeración en valles del cauca.">
+    <meta name="description" content="Ingerack SAS - Más de 20 años de experiencia en diseño, instalación y mantenimiento de sistemas de refrigeración industrial y climatización. Soluciones enérgicamente eficientes y sostenibles.">
+    <meta name="keywords" content="refrigeración industrial, aire acondicionado industrial, mantenimiento sistemas de frío, climatización industrial, eficiencia energética, montaje equipos refrigeración, ingeniería en refrigeración,Sistema de refrigeración en valle del Cauca, aire acondicionado en valle del Cauca, productos de refrigeración en valle del Cauca, servicios de refrigeración en valle del Cauca, asesoría en sistemas de refrigeración en valles del Cauca.">
     <meta name="author" content="Ingerack SAS">
     <meta name="robots" content="index, follow">
 
@@ -70,30 +70,41 @@
         </div>
       </div>
 
-      <nav>
+    <nav>
         <ul class="nav-links">
-          <li class="dropdown">
-            <a href="{{ url('/servicios') }}">Servicios</a>
-            <ul class="dropdown-menu">
-              <li><a href="{{ url('proyecto') }}">Proyectos</a></li>
-              <li><a href="{{ url('mantenimiento') }}">Mantenimiento</a></li>
-            </ul>
-          </li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#contacto">Contáctanos</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0);">Servicios</a>
+                <ul class="dropdown-menu">
+                    <li><a href="{{ url('proyecto') }}">Proyectos</a></li>
+                    <li><a href="{{ url('mantenimiento') }}">Mantenimiento</a></li>
+                </ul>
+            </li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contáctenos</a></li>
         </ul>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-      </nav>
+        <div class="menu-toggle" onclick="toggleMenu()" 
+             style="font-size: 28px; padding: 10px; cursor: pointer;">
+                ☰
+        </div>
+    
+        </nav>
     </header>
+
+
+
 
 
     <div class="hero" id="inicio">
         <div class="cont-info">
             <div class="hero-cont" id="hero-cont">
               <div class="hero-content">
-                <h1 class="text-hero"><strong>¿Perdiendo dinero por fallas en tu sistema de refrigeración?</strong></h1>
-                <p class="info-hero">En Ingerack diseñamos, instalamos y mantenemos sistemas industriales eficientes que protegen tu operación 24/7.</p>
-                <a href="#contacto"><button class="btn-solicitar">Solicita un diagnostico gratis</button></a>
+                <p id="sub-titulo"><strong>POR UN SISTEMA DE REFRIGERACIÓN INEFICIENTE...</strong></p>
+                <h1 class="text-hero"><strong>¡ESTÁS PERDIENDO DINERO!</strong></h1>
+                <p id="hero-text" id="pos-titulo" >Las fallas recurrentes, las paradas de producción y el consumo energético excesivo</p> 
+                <p id="asento" id="hero-text"><strong>no son inevitables.</p></strong> 
+                <p id="hero-text">Podemos ayudarte a eliminarlos y recuperar tu rentabilidad.</p>
+                <a href="#contacto"><button class="btn-solicitar">¡SOLICITA TU DIAGNÓSTICO GRATIS!</button></a>
+                <p id="respuesta">***Respuesta Inmediata · Garantía contractual incluida***</p>
               </div>
             </div>
         </div>
@@ -106,42 +117,60 @@
 
     <section class="soluciones">
         <div class="container">
+
             <div class="soluciones-intro"> 
-                <h2>Soluciones a la medida de tu operación</h2>
+                <h2>Tres factores que definen la continuidad y rentabilidad de tu operación</h2>
                 <p class="soluciones-texto">
-                    Sin importa el tamaño de tu negocio, buscamos ser tu aliado, brindarte seguridad y confiabilidad en tus sistemas de refrigeracion o climatización y hacer tu empresa más productiva.
+                    En cualquier operación que dependa de refrigeración, tres puntos críticos hacen la diferencia entre operar sin interrupciones o perder miles de dólares: <strong>cómo se diseñó el sistema, cómo se mantiene y qué tan rápido se corrigen las fallas.</strong>
+                    Ignorar uno de ellos puede significar paradas imprevistas, consumo energético desbordado y pérdidas millonarias.
+
                 </p>
             </div>
 
             <div class="soluciones-grid">
                 <div class="soluciones-card">
-                    <img src="{{ asset('img/Pagina web - proyectos.png') }}" alt="Sostenibilidad en refrigeración">
+
                     <h3>Diseño e Instalación </h3>
-                    <p>Creamos cuartos frios, salas de procesos y sistemas de aire acondicionado para ofinicas con un diseño optimizado a tu operacion</p>
-                    <P> <strong>¿sabes cal es el problema principal al hacer estos diseños?</strong></p>
+                    <img src="{{ asset('img/PGW-PRINCIPAL -CarlosIng.png') }}" alt="Sostenibilidad en refrigeración">
+
+                    <P> <strong>¿Sabes cuánto te cuesta un diseño de refrigeración sobredimensionado?</strong></p>
+
+                    <p>Un sistema mal calculado aumenta hasta un 40% tu consumo energético y acortar la vida útil de los equipos.</p>
+
+                    <P> En Ingerack diseñamos proyectos que ahorran energía y evitan sobre costos desde el primer dia.</p>
                     <div> 
-                       <a href="{{ url('proyecto') }}"><button  class="soluciones-botton">Conoce más</button></a> 
+                       <a href="{{ url('proyecto') }}"><button  class="soluciones-botton">¡DESCUBRE CÓMO OPTIMIZAR TU INVERSIÓN!</button></a> 
                     </div>
                 </div>
-                <div class="soluciones-card">
-                    <img src="{{ asset('img/Pagina web - correctivo 2.png') }}" alt="Sostenibilidad en refrigeración">
-                    <h3>Corrección de fallas</h3>
 
-                    <p>Solucionamos los problemas que presenten tus equipos de refrigeración y poner en marcha tu producción.</p>
-                    <P>Ahorrar hasta un 30% de consumo de energía y lograr un rendimiento como de equipos nuevos, es posible con nosotros.</p>
+                <div class="soluciones-card">
+                    <h3>Mantenimientos programados</h3>
+                    
+                    <img src="{{ asset('img/Pagina web - contrato.png') }}" alt="Sostenibilidad en refrigeración">
+
+                    <P> <strong>Paradas inesperadas = Pérdidas millonarias</strong></p>
+
+                    <p>Un programa de mantenimiento inteligente reduce un 90% los fallos críticos y ahorra hasta un 30% de energía.</p>
+
+                    <P>Nuestro contrato garantiza respaldo 27/7 y continuidad en tu operación.</p>
                     <div> 
-                        <a href="#contacto"><button class="soluciones-botton">Conoce más</button></a>
+                        <a href="{{ url('mantenimiento') }}"><button class="soluciones-botton">¡ASEGURA TU OPERACIÓN HOY!</button></a>
                     </div>    
 
                 </div>
                 <div class="soluciones-card">
-                    <img src="{{ asset('img/Pagina web - contrato.png') }}" alt="Sostenibilidad en refrigeración">
-                    <h3>mantenimientos programados</h3>
-                    <p>Sabias que las paradas inesperadas en  equipos de refrigeracion pueden costarle a tu empresa mas de 100 millones.</p>
-                    <P>Evita en un 80% los fallos críticos, perdida de dinero y ahorra hasta un 30% de energia con un programa de mantenimientos eficiente. </p>
+                    <h3>Mantenimiento Correctivo</h3>
+
+                    <img src="{{ asset('img/Pagina web - correctivo 2.png') }}"> 
+
+                    <P><strong>Una falla no corregida, es una bomba de tiempo muy costosa</strong></p>
+
+                    <p>ndo no solucionas a tiempo un fallo en tu sistema, este puede costarte millones en pérdida</p>
+
+                    <P>Nos especializamos en detectar y corregir el problema de raíz para que vuelvas a operar rápido y sin sorpresas.</p>
 
                     <div> 
-                        <a href="{{ url('mantenimiento') }}"><button class="soluciones-botton">Conoce más</button></a> 
+                        <a href="{{ url('mantenimiento') }}"><button class="soluciones-botton">¡RECUPERA TU OPERACIÓN HOY!</button></a> 
                     </div>                
                 </div>
             </div>
@@ -157,31 +186,6 @@
 
 
 
-   
-    <section class="nosotros" id="nosotros">
-        <div class="container">
-            <div class="content" id="content-nosotros">
-                <div class="text">
-                    <h2>Nosotros</h2>
-                    <p>
-                        Mas de 23 años de trayectoria son prueba del compromiso de solucionar las necesidades de nuestros clientes en el sector de la refrigeración, por eso nos especializado en el diseño, montaje y mantenimiento de sistemas de refirgeracion industrial.
-
-                    </p>
-                    <p>
-                        Estamos  comprometidos en brindar soluciones adaptadas a diversos sectores, ofreciendo nuestra experiencia ya sea en conservación de productos, cadena de frio o climatización de ambientes para mejorar la operación y proteger la rentabilidad de nuestros clientes.
-                    </p>
-                </div>
-                <div class="image">
-                    <img id="industrial" src="{{ asset('img/totallogo.jpeg') }}"
-                        alt="Experiencia en refrigeración industrial">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
 
     <div class="section-transition0"></div>
 
@@ -191,17 +195,26 @@
 
     <section class="Diferentes">
         <div class="container">
-            <h2>Lo que nos hace diferentes</h2>
+            <h2>Razones Para Confiar tu Operación a Ingerack</h2>
 
             <div class="diferentes-grid">
                 <div id="soporte" class="diferentes-card">
-                    <h3>Soporte especializado y respuesta 24/7</h3>
+                    <div class="card-content">
+                        <h3>Respaldo técnico 24/7</h3>
+                        <p class="hover-text">Para que tu producción no se detenga contamos con respuesta inmediata que evita pérdidas millonarias. Ingenieros y técnicos especializados listos para actuar ante cualquier eventualidad.</p>
+                    </div>
                 </div>
                 <div id="experiencia" class="diferentes-card">
-                    <h3>+ 20 años de experiencia</h3>
+                    <div class="card-content">
+                        <h3>Rendimiento garantizado por contrato</h3>
+                        <p class="hover-text">Te respaldamos con un compromiso firmado que asegura el rendimiento y el consumo energético de tu sistema, protegiendo tu inversión desde el primer día.</p>
+                    </div>
                 </div>
                 <div id="tecnologia" class="diferentes-card">
-                    <h3>Tecnología de ultima generación</h3>
+                    <div class="card-content">
+                        <h3>Tecnología de última generación</h3>
+                        <p class="hover-text">Monitoreo, control y eficiencia energética en tiempo real para mantener tu operación siempre bajo control.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -209,7 +222,11 @@
 
 
 
+
+
     <div class="section-transition0-1"></div>
+
+
 
 
 
@@ -246,8 +263,6 @@
 
 
 
-
-
     
     <section class="clientes">
         <div class="container">
@@ -263,7 +278,35 @@
         </div>
     </section>
 
+
     
+
+
+    <section class="nosotros" id="nosotros">
+        <div class="container">
+            <h2>Quiénes somos y por qué podemos proteger tu operación</h2>
+            <div class="content" id="content-nosotros">
+                <div class="text">
+                    <p>
+                        Con más de 20 años de experiencia en refrigeración industrial, en Ingerack ayudamos a empresas de todo tamaño a mantener su operación segura, continua y eficiente.
+                    </p>
+                    <p>
+                        Desde 2003 diseñamos, instalamos y mantenemos sistemas de refrigeración y climatización adaptados a cada necesidad, desde cuartos fríos y cavas industriales hasta soluciones de confort para espacios comerciales.
+                    </p>
+                    <p>
+                        Nuestro compromiso es claro: soluciones que optimizan recursos, cumplen normativas y protegen tu rentabilidad.
+                    </p>
+                </div>
+                <div class="image">
+                    <img id="industrial" src="{{ asset('img/totallogo.jpeg') }}"
+                        alt="Experiencia en refrigeración industrial">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 
 
     <div class="section-transition1"></div>
@@ -333,6 +376,10 @@
         </div>
     </section>
 
+
+
+    
+
     <!-- SECCIÓN DE MAPA -->
     <section id="mapa">
         <h2>Visítanos</h2>
@@ -342,7 +389,11 @@
         </div>
     </section>
 
-        <!-- SECCIÓN DE REDES SOCIALES -->
+
+
+
+
+    <!-- SECCIÓN DE REDES SOCIALES -->
     <section id="redes-sociales">
         <h2>Síguenos en nuestras Redes Sociales</h2>
         <p>Conéctate con nosotros y mantente al día con nuestras novedades.</p>
@@ -362,6 +413,11 @@
         </div>
     </section>
     
+
+
+
+
+
     <footer>
         <p>© 2025 Refrigeración Industrial. Todos los derechos reservados.</p>
     </footer>
@@ -371,6 +427,88 @@
     <a href="https://wa.me/573001234567" class="btn-whatsapp" target="_blank" aria-label="Chatea con nosotros por WhatsApp">
       <i class="fab fa-whatsapp"></i>
     </a>
+
+<script>
+// Comportamiento del header en móvil
+let lastScrollTop = 0;
+const header = document.querySelector('header');
+const scrollThreshold = 100;
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+        header.classList.add('header-hidden');
+    } else {
+        header.classList.remove('header-hidden');
+    }
+    
+    lastScrollTop = scrollTop;
+});
+
+// Tu código existente para el menú
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+    
+    if (!navLinks.classList.contains('show')) {
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+            dropdown.classList.remove('active');
+        });
+    }
+}
+
+// Manejar dropdowns en móviles
+document.querySelectorAll('.dropdown > a').forEach(dropdownLink => {
+    dropdownLink.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const dropdown = this.parentElement;
+            const wasActive = dropdown.classList.contains('active');
+            
+            document.querySelectorAll('.dropdown').forEach(d => {
+                d.classList.remove('active');
+            });
+            
+            if (!wasActive) {
+                dropdown.classList.add('active');
+            }
+        }
+    });
+});
+
+// Cerrar menú al hacer clic en un enlace que no sea dropdown
+document.querySelectorAll('.nav-links a:not(.dropdown > a)').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.remove('show');
+            
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+});
+
+// Cerrar menú al hacer clic fuera de él
+document.addEventListener('click', function(e) {
+    if (window.innerWidth <= 768) {
+        const navLinks = document.querySelector('.nav-links');
+        const menuToggle = document.querySelector('.menu-toggle');
+        
+        if (navLinks.classList.contains('show') && 
+            !navLinks.contains(e.target) && 
+            !menuToggle.contains(e.target)) {
+            navLinks.classList.remove('show');
+            
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    }
+});
+</script>
 
 </body>
 

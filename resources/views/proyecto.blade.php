@@ -65,17 +65,21 @@
         </div>  
 
         <nav>
-          <ul class="nav-links">
+        <ul class="nav-links">
             <li class="dropdown">
-              <a href="   ">Servicios</a>
-              <ul class="dropdown-menu">
-                <li><a href="{{ url('proyecto') }}">Proyectos</a></li>
-                <li><a href="{{ url('mantenimiento') }}">Mantenimiento</a></li>
-              </ul>
+                <a href="javascript:void(0);">Servicios</a>
+                <ul class="dropdown-menu">
+                    <li><a href="{{ url('proyecto') }}">Proyectos</a></li>
+                    <li><a href="{{ url('mantenimiento') }}">Mantenimiento</a></li>
+                </ul>
             </li>
-            <li><a href="#contacto">Contáctanos</a></li>
-          </ul>
-          <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contáctenos</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()" 
+             style="font-size: 28px; padding: 10px; cursor: pointer;">
+                ☰
+        </div>    
         </nav>
     </header>
 
@@ -88,13 +92,13 @@
             <div class="cont-info">
                 <div class="hero-cont" id="hero-cont">
                     <div class="hero-content">
-                        <h1 class="text-hero"><strong>¿Sabías que un sistema sobredimensionado puede costarte un 40% más mes a mes?</strong></h1>
-                        <p class="info-hero">EMuchos proyectos de refrigeración y climatización fallan desde el diseño. Sistemas sobredimensionados, costos inflados y fallas que terminan afectando tu operación….</p>
-                        <p>Y lo peor: nadie se hace responsable cuando algo sale mal</p>
+                        <h1 class="text-hero"> ¿TU SISTEMA DE REFRIGERACIÓN <br> <strong> ESTÁ GASTANDO MÁS ENERGÍA</strong><br> DE LA PROYECTADA?</h1>
+                        <p id="info-hero">Un diseño sobredimensionado o un cálculo de cargas térmica incorrecto, puede disparar tu consumo hasta un 40% y acortar la vida útil de tus equipos. Empiezas tu proyecto perdiendo dinero y con problemas, lo peor… no hay quien asuma la responsabilidad.</p>
+                        <p id="info-hero" class="sub-titulo">En Ingerack optimizamos tu proyecto desde el diseño hasta la instalación, con garantía escrita de rendimiento y eficiencia.</p>
                         <a href="#contacto">
-                          <button  class="btn-solicitar">Solicita una revisión sin costo </button>
+                          <button  class="btn-solicitar">¡SOLICITA UNA SOLICITA UNA REVISIÓN SIN COSTO SIN COSTO!</button>
                         </a>
-
+                        <p class="sub-titulo">***Respuesta Inmediata · Garantía contractual incluida***</p>
                     <div>
                 </div>
             </div>
@@ -104,82 +108,84 @@
 
 
 
+    <div class="section-transition"></div>
 
-    <section class="quien-responde">
-        <div class="container">
-            <div class="quien-responde-title">
-                <h2>¿Quién responde si tu sistema no rinde como prometieron?</h2>
+
+
+
+
+<section class="quien-responde">
+    <div class="container">
+        <div class="quien-responde-title">
+            <h2>Señales de que tu proyecto está drenando tu dinero</h2>
+        </div>
+        
+        <div class="quien-responde-grid">
+            <div id="respondeDiseño" class="responde-card special">
+                <div class="card-inner">
+                    <img src="{{ asset('img/PGW-2DISEÑO-diseñotecnicointeli.png') }}" alt="Fallas desde el diseño">
+                    <div class="content">
+                        <h3>Fallas desde el diseño</h3>
+                        <p>Un cálculo de carga térmica inexacto o ignorar el crecimiento de tu operación puede dejarte con un sistema ineficiente desde el primer día.</p>
+                    </div>
+                </div>
             </div>
-            <div class="quien-responde-list">
-              <ul>
-                <li class="respondeList1">Empresas que no se comprometen con el rendimiento re del sistema.</li>
-                <li class="respondeList2">Instalaciones sin contrato de garantía técnica.</li>
-                <li class="respondeList1">Diseños sin estudios reales de carga térmica o creciento futuro.</li>
-                <li class="respondeList2">Sobrecostos por equipos sobredimensionos que no necesitas.</li>
-                <li class="respondeList1">Facturas elevadas desde el primer mes.</li>
-                <li class="respondeList2">Fallas en el sistema... y nadie responde por ellas.</li>
-              </ul>
+
+            <div id="respondeGarantia" class="responde-card special">
+                <div class="card-inner">
+                    <img src="{{ asset('img/PGW-PRINCIPAL-Manoscontrato2.png') }}" alt="Sin garantía real">
+                    <div class="content">
+                        <h3>Sin garantía real de rendimiento</h3>
+                        <p>Si tu proveedor no se compromete por contrato al consumo energético y capacidad de enfriamiento, quedas expuesto a sobre costos y bajo rendimiento.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="respondeCostos" class="responde-card special">
+                <div class="card-inner">
+                    <img src="{{ asset('img/PGW-PRINCIPALmantenimientoIng.png') }}" alt="Sobre costos innecesarios">
+                    <div class="content">
+                        <h3>Sobre costos innecesarios</h3>
+                        <p>Un diseño deficiente puede llevarte a comprar equipos más grandes y costosos de lo que realmente necesitas, afectando tu rentabilidad a largo plazo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="respondeResponsabilidad" class="responde-card special">
+                <div class="card-inner">
+                    <img src="{{ asset('img/Pagina web - correctivo 2.png') }}" alt="Nadie se hace responsable">
+                    <div class="content">
+                        <h3>Nadie se hace responsable después de instalar</h3>
+                        <p>Si el sistema falla o consume más de lo prometido, ¿quién responde? Sin un respaldo contractual, la respuesta suele ser: nadie.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
 
 
 
-    <section class="financiero">
-      <div class="container">
-        <div class="financiero-title">
-            <h2>Lo que parece una mala elección técnica… puede convertirse en un desastre financiero. </h2>
-        </div>
-        <div class="financiero-text">
-            <p> Un mal diseño puede paralizar tu cadena de frío, elevar tu consumo energético o forzarte a rehacer toda la instalación.</p>
-            <p>En Ingerack sabemos que esto no es un lujo: es la operación de tu empresa.</p>
-        </div>
-      </div>
-    </section>
+    <div class="section-transition00"></div>
 
-
-
-
-    <div class="section-transition0"></div>
-
-
-
-
-    <section class="historias">
-      <div class="container">
-        <div class="historias-title">
-            <h2>Historias reales, resultados garantizados</h2>
-        </div>
-        <div class="historias-galeria"> 
-          <img src="{{ asset('img/italcol.webp') }}" alt="Cliente 1">
-          <img src="{{ asset('img/ovopacific.webp') }}" alt="Cliente 2">
-        </div>
-      </div>
-    </section>
-
-
-
-
-    <div class="section-transition0-5"></div>
 
 
 
 
     <section class="sistema">
       <div class="container">
-        <h2>Tu sistema con respaldo real. Diseño garantizado por contrato.</h2>
+        <h2>Nuestra forma de diseñar proyectos que funcionan hoy… y en 20 años</h2>
         <div class="sistema-grid">
           <div id="sistemaDiseño" class="sistema-card special">
             <div class="card-inner">
-              <img src="{{ asset('img/Paginaweb-soporte.png') }}" alt="Soporte técnico inteligente">
+              <img src="{{ asset('img/PGW-2DISEÑO-diseñotecnicointeli.png') }}" alt="Soporte técnico inteligente">
               <div class="content">
-                <h3>Diseño técnico inteligente</h3>
+                <h3>Diseños que ahorran desde el primer día</h3>
                 <p>
-                  Cálculo exacto de carga térmica<br>
-                  Selección de equipos eficientes y duraderos<br>
-                  Ahorro en inversión inicial y energía mensual
+                  Porque calculamos lo que realmente necesitas, evitando sobre costos y exceso de consumo energético desde el inicio.
+
                 </p>
               </div>
             </div>
@@ -187,13 +193,11 @@
 
           <div id="sistemaCompromiso" class="sistema-card special">
             <div class="card-inner">
-              <img src="{{ asset('img/Paginaweb-experiencia.png') }}" alt="Compromiso contractual">
+              <img src="{{ asset('img/PGW-PRINCIPAL-Manoscontrato2.png') }}" alt="Compromiso contractual">
               <div class="content">
-                <h3>Compromiso contractual</h3>
+                <h3>Compromiso por contrato</h3>
                 <p>
-                  Garantía de 1 año sin fallas por diseño o instalación<br>
-                  Compromiso de consumo energético previsto por cálculo térmico<br>
-                  Si no cumplimos, respondemos
+                  Te garantizamos por escrito el rendimiento y consumo de tu sistema, para que nunca te quedes sin respaldo.
                 </p>
               </div>
             </div>
@@ -201,13 +205,11 @@
 
           <div id="sistemaProyecto" class="sistema-card special">
             <div class="card-inner">
-              <img src="{{ asset('img/Paginaweb-tecnologia.png') }}" alt="Proyectos escalables">
+              <img src="{{ asset('img/PGW-PRINCIPALmantenimientoIng.png') }}" alt="Proyectos escalables">
               <div class="content">
-                <h3>Proyectos escalables</h3>
+                <h3>Proyectos que crecen contigo</h3>
                 <p>
-                  Diseño que crece contigo<br>
-                  Preparados para expansiones futuras sin rehacer todo<br>
-                  Reducción de retrabajos y sobrecostos
+                  Diseñamos pensando en la expansión, para que tu sistema evolucione con tu negocio sin rehacer toda la instalación.
                 </p>
               </div>
             </div>
@@ -216,6 +218,7 @@
         </div>
       </div>
     </section>
+
 
 
 
@@ -257,7 +260,6 @@
 
       </div>
     </section>
-
 
 
 
@@ -321,19 +323,44 @@
 
 
 
+    <div class="section-transition0-5"></div>
+
+
+
+    <section class="historias">
+      <div class="container">
+        <div class="historias-title">
+            <h2>Historias reales, resultados garantizados</h2>
+        </div>
+        <div class="historias-galeria"> 
+          <img src="{{ asset('img/italcol.webp') }}" alt="Cliente 1">
+          <img src="{{ asset('img/ovopacific.webp') }}" alt="Cliente 2">
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <div class="section-transition00"></div>
+
+
+
+
 
     <section class="para-ti">
       <div class="container">
         <div class="para-ti-title">
-            <h2>Este servicio es para ti si…</h2>
+            <h2>¡Es para ti! Si…</h2>
         </div>
             <div class="para-ti-list">
               <ul>
-                <li class="tiList1">Te preocupa que tu sistema no rinda como te prometen</li>
-                <li class="tiList2">Te presentaron un presupuesto y no entiendes si es justo</li>
-                <li class="tiList1">Quieres crecer y no quieres que tu sistema quede corto en un año</li>
-                <li class="tiList2">Estás cansado de trabajar con empresas que se lavan las manos ante los errores</li>
-                <li class="tiList1">Necesitas control energético, continuidad operativa y soporte técnico confiable</li>
+                <li class="tiList1">Te preocupa que tu sistema no rinda como prometieron.</li>
+                
+                <li class="tiList2"> No quieres pagar facturas de energía infladas cada mes.</li>
+                <li class="tiList1">Buscas un aliado que responda cuando algo falla.</li>
+                <li class="tiList2">Quieres un proyecto que crezca contigo sin rehacer todo</li>
               </ul>
             </div>
       </div>
@@ -450,6 +477,89 @@
     <a href="https://wa.me/573001234567" class="btn-whatsapp" target="_blank" aria-label="Chatea con nosotros por WhatsApp">
       <i class="fab fa-whatsapp"></i>
     </a>
+
+<script>
+// Comportamiento del header en móvil
+let lastScrollTop = 0;
+const header = document.querySelector('header');
+const scrollThreshold = 100;
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+        header.classList.add('header-hidden');
+    } else {
+        header.classList.remove('header-hidden');
+    }
+    
+    lastScrollTop = scrollTop;
+});
+
+// Tu código existente para el menú
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+    
+    if (!navLinks.classList.contains('show')) {
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+            dropdown.classList.remove('active');
+        });
+    }
+}
+
+// Manejar dropdowns en móviles
+document.querySelectorAll('.dropdown > a').forEach(dropdownLink => {
+    dropdownLink.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const dropdown = this.parentElement;
+            const wasActive = dropdown.classList.contains('active');
+            
+            document.querySelectorAll('.dropdown').forEach(d => {
+                d.classList.remove('active');
+            });
+            
+            if (!wasActive) {
+                dropdown.classList.add('active');
+            }
+        }
+    });
+});
+
+// Cerrar menú al hacer clic en un enlace que no sea dropdown
+document.querySelectorAll('.nav-links a:not(.dropdown > a)').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.remove('show');
+            
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+});
+
+// Cerrar menú al hacer clic fuera de él
+document.addEventListener('click', function(e) {
+    if (window.innerWidth <= 768) {
+        const navLinks = document.querySelector('.nav-links');
+        const menuToggle = document.querySelector('.menu-toggle');
+        
+        if (navLinks.classList.contains('show') && 
+            !navLinks.contains(e.target) && 
+            !menuToggle.contains(e.target)) {
+            navLinks.classList.remove('show');
+            
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    }
+});
+</script>
+
 
 </body>
 </html> 
