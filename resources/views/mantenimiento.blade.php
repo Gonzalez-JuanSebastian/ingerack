@@ -114,47 +114,40 @@
 
 
 
+    <!-- Reemplaza la sección "significar-section" actual con este código: -->
     <section class="significar-section">
-        <h2 >Lo que realmente pierdes cuando tu sistema falla</h2>
         <div class="container">
-
-            <div class="significar-cont-1">
-                <div class="image">
-                    <img src="{{ asset('img/PGW-3MANTENIMIENTO-materiasprimas.png') }}" alt="Sostenibilidad en refrigeración">
-                </div>
-                <div class="text">
-                    <h3>Pérdida de materias primas</h3>
-                </div>
-            </div>
+            <h2>Lo que realmente pierdes cuando tu sistema falla</h2>
             
-            <div class="significar-cont-2">
-                <div class="image">
-                    <img src="{{ asset('img/PGW-3MANTENIMIENTO-incumplimiento.png') }}" alt="Sostenibilidad en refrigeración">
+            <div class="significar-grid">
+                <div id="perdidaMaterias" class="significar-card special">
+                    <div class="card-content">
+                        <h3>Pérdida de materias primas</h3>
+                        <p class="hover-text">Cuando tu sistema de refrigeración falla, tus materias primas pueden echarse a perder, generando pérdidas económicas directas.</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <h3>Incumplimientos con clientes</h3>
+                <div id="incumplimientoClientes" class="significar-card special">
+                    <div class="card-content">
+                        <h3>Incumplimientos con clientes</h3>
+                        <p class="hover-text">La incapacidad de entregar productos a tiempo debido a fallas en la cadena de frío daña la confianza con tus clientes.</p>
+                    </div>
+                </div>
+                <div id="deterioroReputacion" class="significar-card special">
+                    <div class="card-content">
+                        <h3>Deterioro en la reputación de tu empresa</h3>
+                        <p class="hover-text">Cada falla afecta la imagen de tu empresa como confiable y profesional, lo que puede alejar a clientes potenciales.</p>
+                    </div>
+                </div>
+                <div id="costosEnergeticos" class="significar-card special full-width">
+                    <div class="card-content">
+                        <h3>Costos energéticos innecesarios</h3>
+                        <p class="hover-text">Un sistema que no funciona de manera eficiente consume más energía, incrementando tus costos operativos de forma constante y evitables.</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="significar-cont-1">
-                <div class="image">
-                    <img src="{{ asset('img/PGW-3MANTENIMIENTO-reputación.png') }}" alt="Sostenibilidad en refrigeración">
-                </div>
-                <div class="text">
-                    <h3>Deterioro en la reputación de tu empresa</h3>
-                </div>
-            </div>
-            
-            <div class="significar-cont-2">
-                <div class="image">
-                    <img src="{{ asset('img/PGW-2DISEÑO-nadiesehaceresponsable.png') }}" alt="Sostenibilidad en refrigeración">
-                </div>
-                <div class="text">
-                    <h3>Costos energéticos innecesarios</h3>
-                </div>
-            </div>  
         </div>
     </section>
+
 
 
 

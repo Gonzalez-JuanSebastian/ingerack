@@ -114,34 +114,55 @@
 
 
 
-    <section class="quien-responde">
-        <div class="container">
-            <div class="quien-responde-title">
-                <h2>Señales de que tu proyecto está drenando tu dinero</h2>
+<section class="quien-responde">
+    <div class="container">
+        <div class="quien-responde-title">
+            <h2>Señales de que tu proyecto está drenando tu dinero</h2>
+        </div>
+        
+        <div class="quien-responde-grid">
+            <div id="respondeDiseño" class="responde-card special">
+                <div class="card-inner">
+                    <img src="{{ asset('img/PGW-2DISEÑO-diseñotecnicointeli.png') }}" alt="Fallas desde el diseño">
+                    <div class="content">
+                        <h3>Fallas desde el diseño</h3>
+                        <p>Un cálculo de carga térmica inexacto o ignorar el crecimiento de tu operación puede dejarte con un sistema ineficiente desde el primer día.</p>
+                    </div>
+                </div>
             </div>
-            
-            <div class="quien-responde-list">
-              <ul>
-                <li class="responde-item respondeList1">
-                    <div class="item">Fallas desde el diseño</div>
-                    <p class="hover-paragraph">Un cálculo de carga térmica inexacto o ignorar el crecimiento de tu operación puede dejarte con un sistema ineficiente desde el primer día.</p>
-                </li>
-                <li class="responde-item respondeList2">
-                    <div class="item">Sin garantía real de rendimiento</div>
-                    <p class="hover-paragraph">Si tu proveedor no se compromete por contrato al consumo energético y capacidad de enfriamiento, quedas expuesto a sobre costos y bajo rendimiento.</p>
-                </li>
-                <li class="responde-item respondeList1">
-                    <div class="item">Sobre costos innecesarios</div>
-                    <p class="hover-paragraph">Un diseño deficiente puede llevarte a comprar equipos más grandes y costosos de lo que realmente necesitas, afectando tu rentabilidad a largo plazo.</p>
-                </li>
-                <li class="responde-item respondeList2">
-                    <div class="item">Nadie se hace responsable después de instalar</div>
-                    <p class="hover-paragraph">Si el sistema falla o consume más de lo prometido, ¿quién responde? Sin un respaldo contractual, la respuesta suele ser: nadie.</p>
-                </li>
-              </ul>
+
+            <div id="respondeGarantia" class="responde-card special">
+                <div class="card-inner">
+                    <img src="{{ asset('img/PGW-PRINCIPAL-Manoscontrato2.png') }}" alt="Sin garantía real">
+                    <div class="content">
+                        <h3>Sin garantía real de rendimiento</h3>
+                        <p>Si tu proveedor no se compromete por contrato al consumo energético y capacidad de enfriamiento, quedas expuesto a sobre costos y bajo rendimiento.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="respondeCostos" class="responde-card special">
+                <div class="card-inner">
+                    <img src="{{ asset('img/PGW-PRINCIPALmantenimientoIng.png') }}" alt="Sobre costos innecesarios">
+                    <div class="content">
+                        <h3>Sobre costos innecesarios</h3>
+                        <p>Un diseño deficiente puede llevarte a comprar equipos más grandes y costosos de lo que realmente necesitas, afectando tu rentabilidad a largo plazo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="respondeResponsabilidad" class="responde-card special">
+                <div class="card-inner">
+                    <img src="{{ asset('img/Pagina web - correctivo 2.png') }}" alt="Nadie se hace responsable">
+                    <div class="content">
+                        <h3>Nadie se hace responsable después de instalar</h3>
+                        <p>Si el sistema falla o consume más de lo prometido, ¿quién responde? Sin un respaldo contractual, la respuesta suele ser: nadie.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
 
