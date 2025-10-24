@@ -263,7 +263,14 @@
 
 
 
-    
+
+
+    <div class="section-transition3"></div>
+
+
+
+
+
     <section class="clientes">
         <div class="container">
             <div class="clientes-intro"> 
@@ -277,6 +284,12 @@
             </div>
         </div>
     </section>
+
+
+
+
+    <div class="section-transition4"></div>
+
 
 
     
@@ -304,12 +317,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-    <div class="section-transition1"></div>
 
 
 
@@ -398,16 +405,22 @@
         <h2>Síguenos en nuestras Redes Sociales</h2>
         <p>Conéctate con nosotros y mantente al día con nuestras novedades.</p>
         <div class="redes-container">
-            <a href="https://www.facebook.com/ingerack" target="_blank" class="red-social facebook">
+            <a href="https://www.facebook.com/Ingerackfrio" target="_blank" class="red-social facebook">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https://www.instagram.com/ingerack" target="_blank" class="red-social instagram">
+            <a href="https://www.instagram.com/ingerackcali/" target="_blank" class="red-social instagram">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://www.linkedin.com/company/ingerack" target="_blank" class="red-social linkedin">
+            <a href="https://www.linkedin.com/company/ingerack-s-a-s" target="_blank" class="red-social linkedin">
                 <i class="fab fa-linkedin-in"></i>
             </a>
-             <a href="https://twitter.com/ingerack" target="_blank" class="red-social youtube">
+
+            <a href="https://www.tiktok.com/@ingerack.sas" target="_blank" class="red-social tik-tok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+
+            <a href="https://www.youtube.com/@Ingerack " target="_blank" class="red-social youtube">
                 <i class="fab fa-youtube"></i>
             </a>
         </div>

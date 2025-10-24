@@ -333,16 +333,16 @@ section {
 }
 
 #respondeDiseño.special::before {
-    background-image: url(/img/PGW-2DISEÑO-diseñotecnicointeli.png);
+    background-image: url(/img/PGW-2DISEÑO-fallaendiseño.png);
 }
 #respondeGarantia.special::before {
-    background-image: url(/img/PGW-PRINCIPAL-Manoscontrato2.png);
+    background-image: url(/img/PGW-3MANTENIMIENTO-incumplimiento.png);
 }
 #respondeCostos.special::before {
-    background-image: url(/img/PGW-PRINCIPALmantenimientoIng.png);
+    background-image: url(/img/PGW-2DISEÑO-sobrecostos.png);
 }
 #respondeResponsabilidad.special::before {
-    background-image: url("/img/Pagina web - correctivo 2.png");
+    background-image: url("/img/PGW-2DISEÑO-singarantia.png");
 }
 
 
@@ -961,8 +961,10 @@ section {
 
 .facebook { background: #1877f2; }
 .instagram { background: #e4405f; }
-.linkedin { background: #0077b5; }
-.youtube { background: #e4405f}
+.linkedin { background: #1877f2; }
+.tik-tok { background: #e4405f}
+.youtube { background: #1877f2; }
+
 .red-social:hover {
     transform: scale(1.1);
     filter: brightness(1.2);

@@ -123,7 +123,7 @@
         <div class="quien-responde-grid">
             <div id="respondeDiseño" class="responde-card special">
                 <div class="card-inner">
-                    <img src="{{ asset('img/PGW-2DISEÑO-diseñotecnicointeli.png') }}" alt="Fallas desde el diseño">
+                    <img src="{{ asset('img/PGW-2DISEÑO-fallaendiseño.png') }}" alt="Fallas desde el diseño">
                     <div class="content">
                         <h3>Fallas desde el diseño</h3>
                         <p>Un cálculo de carga térmica inexacto o ignorar el crecimiento de tu operación puede dejarte con un sistema ineficiente desde el primer día.</p>
@@ -133,7 +133,7 @@
 
             <div id="respondeGarantia" class="responde-card special">
                 <div class="card-inner">
-                    <img src="{{ asset('img/PGW-PRINCIPAL-Manoscontrato2.png') }}" alt="Sin garantía real">
+                    <img src="{{ asset('img/PGW-3MANTENIMIENTO-incumplimiento.png') }}" alt="Sin garantía real">
                     <div class="content">
                         <h3>Sin garantía real de rendimiento</h3>
                         <p>Si tu proveedor no se compromete por contrato al consumo energético y capacidad de enfriamiento, quedas expuesto a sobre costos y bajo rendimiento.</p>
@@ -143,7 +143,7 @@
 
             <div id="respondeCostos" class="responde-card special">
                 <div class="card-inner">
-                    <img src="{{ asset('img/PGW-PRINCIPALmantenimientoIng.png') }}" alt="Sobre costos innecesarios">
+                    <img src="{{ asset('img/PGW-2DISEÑO-sobrecostos.png') }}" alt="Sobre costos innecesarios">
                     <div class="content">
                         <h3>Sobre costos innecesarios</h3>
                         <p>Un diseño deficiente puede llevarte a comprar equipos más grandes y costosos de lo que realmente necesitas, afectando tu rentabilidad a largo plazo.</p>
@@ -153,7 +153,7 @@
 
             <div id="respondeResponsabilidad" class="responde-card special">
                 <div class="card-inner">
-                    <img src="{{ asset('img/Pagina web - correctivo 2.png') }}" alt="Nadie se hace responsable">
+                    <img src="{{ asset('img/PGW-2DISEÑO-singarantia.png') }}" alt="Nadie se hace responsable">
                     <div class="content">
                         <h3>Nadie se hace responsable después de instalar</h3>
                         <p>Si el sistema falla o consume más de lo prometido, ¿quién responde? Sin un respaldo contractual, la respuesta suele ser: nadie.</p>
@@ -453,16 +453,22 @@
         <h2>Síguenos en nuestras Redes Sociales</h2>
         <p>Conéctate con nosotros y mantente al día con nuestras novedades.</p>
         <div class="redes-container">
-            <a href="https://www.facebook.com/ingerack" target="_blank" class="red-social facebook">
+            <a href="https://www.facebook.com/Ingerackfrio" target="_blank" class="red-social facebook">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https://www.instagram.com/ingerack" target="_blank" class="red-social instagram">
+            <a href="https://www.instagram.com/ingerackcali/" target="_blank" class="red-social instagram">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://www.linkedin.com/company/ingerack" target="_blank" class="red-social linkedin">
+            <a href="https://www.linkedin.com/company/ingerack-s-a-s" target="_blank" class="red-social linkedin">
                 <i class="fab fa-linkedin-in"></i>
             </a>
-             <a href="https://twitter.com/ingerack" target="_blank" class="red-social youtube">
+
+            <a href="https://www.tiktok.com/@ingerack.sas" target="_blank" class="red-social tik-tok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+
+            <a href="https://www.youtube.com/@Ingerack " target="_blank" class="red-social youtube">
                 <i class="fab fa-youtube"></i>
             </a>
         </div>

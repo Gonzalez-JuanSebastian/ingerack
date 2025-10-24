@@ -95,6 +95,24 @@ p {
     );
 }
 
+.section-transition3 {
+    height: 40px;
+    background: linear-gradient(
+        to bottom,
+        var(--background-light),
+        #ffffff
+    );
+}
+
+.section-transition4 {
+    height: 40px;
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        var(--background-light)
+    );
+}
+
 .wave-divider {
     display: block;
     width: 100%;
@@ -499,8 +517,9 @@ section {
 
 /* === Clientes === */
 .clientes {
-    padding: 110px 0;
-    margin: 0;
+  padding: 110px 0;
+  margin: 0;
+  background: #ffffff;
 }
 
 .clientes-intro {
@@ -729,8 +748,10 @@ section {
 
 .facebook { background: #1877f2; }
 .instagram { background: #e4405f; }
-.linkedin { background: #0077b5; }
-.youtube { background: #e4405f}
+.linkedin { background: #1877f2; }
+.tik-tok { background: #e4405f}
+.youtube { background: #1877f2; }
+
 .red-social:hover {
     transform: scale(1.1);
     filter: brightness(1.2);

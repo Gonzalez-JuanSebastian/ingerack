@@ -195,7 +195,6 @@
 
 
 
-
     <section class="Diferentes">
         <div class="container">
             <h2>Razones Para Confiar tu Operación a Ingerack</h2>
@@ -227,43 +226,69 @@
 
 
 
-
     <section class="Diferentes">
         <div class="container">
             <h2>Razones Para Confiar tu Operación a Ingerack</h2>
 
-            <div class="diferentes-grid">
-                <div id="soporte" class="diferentes-card">
-                    <div class="card-content">
-                        <h3>Dependes de cuartos fríos o climatización constante y no puedes permitirte una falla.</h3>
+            <div class="slider-container">
+                <button class="slider-control prev">&#10094;</button>
+                <button class="slider-control next">&#10095;</button>
+
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <!-- Slide 1 -->
+                        <div class="slide">
+                            <div class="diferentes-card" data-image="dependeDe">
+                                <div class="card-content">
+                                    <h3>Dependes de cuartos fríos o climatización constante y no puedes permitirte una falla.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="slide">
+                            <div class="diferentes-card" data-image="produccion">
+                                <div class="card-content">
+                                    <h3>No quieres volver a perder producción ni clientes por un fallo técnico.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="slide">
+                            <div class="diferentes-card" data-image="buscas">
+                                <div class="card-content">
+                                    <h3>Buscas reducir tus costos energéticos con datos y control reales.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="slide">
+                            <div class="diferentes-card" data-image="24/7">
+                                <div class="card-content">
+                                    <h3>Quieres un aliado que responda 24/7.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 5 -->
+                        <div class="slide">
+                            <div class="diferentes-card" data-image="encontrar">
+                                <div class="card-content">
+                                    <h3>Te cuesta encontrar un proveedor que cumpla lo que promete.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 6 -->
+                        <div class="slide">
+                            <div class="diferentes-card" data-image="perdido">
+                                <div class="card-content">
+                                    <h3>Ya has perdido dinero por fallos o mantenimientos mal hechos.</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div id="experiencia" class="diferentes-card">
-                    <div class="card-content">
-                        <h3>No quieres volver a perder producción ni clientes por un fallo técnico.</h3>
-                    </div>
-                </div>
-                <div id="tecnologia" class="diferentes-card">
-                    <div class="card-content">
-                        <h3>Buscas reducir tus costos energéticos con datos y control reales.</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="diferentes-grid">
-                <div id="soporte" class="diferentes-card">
-                    <div class="card-content">
-                        <h3>Quieres un aliado que responda 24/7.</h3>
-                    </div>
-                </div>
-                <div id="experiencia" class="diferentes-card">
-                    <div class="card-content">
-                        <h3>Te cuesta encontrar un proveedor que cumpla lo que promete.</h3>
-                    </div>
-                </div>
-                <div id="tecnologia" class="diferentes-card">
-                    <div class="card-content">
-                        <h3>Ya has perdido dinero por fallos o mantenimientos mal hechos.</h3>
-                    </div>
+
+                <div class="slider-dots">
+                    <!-- Los puntos se generarán con JavaScript -->
                 </div>
             </div>
         </div>
@@ -380,16 +405,22 @@
         <h2>Síguenos en nuestras Redes Sociales</h2>
         <p>Conéctate con nosotros y mantente al día con nuestras novedades.</p>
         <div class="redes-container">
-            <a href="https://www.facebook.com/ingerack" target="_blank" class="red-social facebook">
+            <a href="https://www.facebook.com/Ingerackfrio" target="_blank" class="red-social facebook">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https://www.instagram.com/ingerack" target="_blank" class="red-social instagram">
+            <a href="https://www.instagram.com/ingerackcali/" target="_blank" class="red-social instagram">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://www.linkedin.com/company/ingerack" target="_blank" class="red-social linkedin">
+            <a href="https://www.linkedin.com/company/ingerack-s-a-s" target="_blank" class="red-social linkedin">
                 <i class="fab fa-linkedin-in"></i>
             </a>
-             <a href="https://twitter.com/ingerack" target="_blank" class="red-social youtube">
+
+            <a href="https://www.tiktok.com/@ingerack.sas" target="_blank" class="red-social tik-tok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+
+            <a href="https://www.youtube.com/@Ingerack " target="_blank" class="red-social youtube">
                 <i class="fab fa-youtube"></i>
             </a>
         </div>
@@ -485,6 +516,119 @@ document.addEventListener('click', function(e) {
         }
     }
 });
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    const prevButton = document.querySelector('.slider-control.prev');
+    const nextButton = document.querySelector('.slider-control.next');
+    const dotsContainer = document.querySelector('.slider-dots');
+    
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    let slidesPerView = 3; // Por defecto 3 slides visibles
+    
+    // Determinar cuántos slides mostrar según el ancho de pantalla
+    function updateSlidesPerView() {
+        if (window.innerWidth <= 480) {
+            slidesPerView = 1;
+        } else if (window.innerWidth <= 768) {
+            slidesPerView = 2;
+        } else {
+            slidesPerView = 3;
+        }
+    }
+    
+    // Crear dots
+    function createDots() {
+        dotsContainer.innerHTML = '';
+        const totalDots = totalSlides - slidesPerView + 1;
+        
+        for (let i = 0; i < totalDots; i++) {
+            const dot = document.createElement('div');
+            dot.classList.add('slider-dot');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => {
+                goToSlide(i);
+            });
+            dotsContainer.appendChild(dot);
+        }
+    }
+    
+    function updateSlider() {
+        const slideWidth = 100 / slidesPerView;
+        slider.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+        
+        // Actualizar dots
+        const dots = document.querySelectorAll('.slider-dot');
+        
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+    }
+    
+    function goToSlide(index) {
+        // Asegurarse de que el índice esté dentro de los límites
+        const maxIndex = totalSlides - slidesPerView;
+        currentIndex = Math.max(0, Math.min(index, maxIndex));
+        updateSlider();
+    }
+    
+    function nextSlide() {
+        const maxIndex = totalSlides - slidesPerView;
+        if (currentIndex < maxIndex) {
+            currentIndex += 1; // Cambiado de slidesPerView a 1
+        } else {
+            currentIndex = 0; // Volver al inicio
+        }
+        updateSlider();
+    }
+    
+    function prevSlide() {
+        const maxIndex = totalSlides - slidesPerView;
+        if (currentIndex > 0) {
+            currentIndex -= 1; // Cambiado de slidesPerView a 1
+        } else {
+            currentIndex = maxIndex; // Ir al final
+        }
+        updateSlider();
+    }
+    
+    // Inicializar
+    updateSlidesPerView();
+    createDots();
+    updateSlider();
+    
+    // Event listeners
+    nextButton.addEventListener('click', nextSlide);
+    prevButton.addEventListener('click', prevSlide);
+    
+    // Redimensionar la ventana
+    window.addEventListener('resize', function() {
+        updateSlidesPerView();
+        createDots();
+        // Ajustar currentIndex si es necesario
+        const maxIndex = totalSlides - slidesPerView;
+        if (currentIndex > maxIndex) {
+            currentIndex = maxIndex;
+        }
+        updateSlider();
+    });
+    
+    // Auto-slide cada 5 segundos (opcional)
+    let autoSlide = setInterval(nextSlide, 5000);
+    
+    // Pausar auto-slide al interactuar
+    slider.addEventListener('mouseenter', () => clearInterval(autoSlide));
+    slider.addEventListener('mouseleave', () => {
+        autoSlide = setInterval(nextSlide, 5000);
+    });
+});
+
 </script>
 
 </body>
